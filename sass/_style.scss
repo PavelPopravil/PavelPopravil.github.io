@@ -1,0 +1,579 @@
+@import 'settings';
+
+/* fonts */
+$main-font: 'DINNextLTProMediumCond', sans-serif;
+$second-font: 'Roboto', sans-serif;
+
+/* colors */
+$blue-color: #0089cf;
+$white-color: #ffffff;
+$gray-color: #333333;
+$light_gray-color: #666666;
+
+
+// preloader
+.preloader {}
+
+
+/* buttons */
+.button {
+    @include font-type($gray-color, $main-font, 14px, 14px, 0.7px); text-transform: uppercase;
+    display: inline-block; margin-right: 6px;
+    &:last-child {margin-right: 0px;}
+    
+    i {
+        top: 2px;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:active {
+        
+    }
+
+    &:after {
+
+    }
+}
+.button_white {
+    border: 1px solid  #e4e4e4;
+    padding: 16px 19px;
+    i {
+        margin-left: 55px;
+    }
+    &:hover {background: #ccc;}
+}
+.button_gray {
+    color: #fff; background: $gray-color;
+    padding: 19px 30px 17px;
+
+}
+// DropSize
+ul.buttons {
+    li {
+        display: inline-block;
+        position: relative;
+
+        a {}
+        ul.dropMe {
+            width: 95%; display: none; 
+            position: absolute; top: 100%; left: 0; z-index: 100;
+            li {
+                text-align: center;
+                display: inline-block;
+                border: 1px solid  #e4e4e4; background: #fff;
+
+                &:hover {background: #ccc;}
+
+                a {
+                    @include font-type($gray-color, $main-font, 14px, 14px, 0.7px); text-transform: uppercase;
+                     padding: 16px 19px; display: block;
+                }
+            }
+        }
+    }
+}
+a {
+    @include transition(all 0.5s ease);
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+// application
+.app {
+    min-width: 320px;
+    .main-header {
+        padding: 21px 0 20px;
+    }
+
+    .wr-product {
+        padding: 57px 0 150px; 
+    }
+
+    .wr-intro {
+        background: url(../img/wr-intro_bg.png) no-repeat 0 0; background-size: cover;
+        padding: 261px 0 234px;
+
+        @include respond-to(md) {background-position: 72% 0;}  
+
+        @include respond-to(sm) {padding: 100px 0;}
+
+    }
+
+    .wr-info {
+        background: #F5F5F5 url(../img/wr-info_bg.png) no-repeat 0 0; background-size: cover;
+        padding: 100px 0 115px;
+
+        @include respond-to(lg) {background-position: 54% 0;}
+
+        @include respond-to(md) {background-position: 31% 0;}
+
+    }
+
+    .wr-social {
+        padding: 111px 0 207px;
+
+        @include respond-to(sm) {padding: 100px 0;}
+    }
+
+    .main-footer {
+        background: #0c0d0d;
+        .footer-top {
+            padding: 40px 0;            
+        }
+
+        .footer-bottom {
+            padding: 6px 0 34px;
+        }
+    }
+}
+// MODULS
+
+// logo
+a.logo {
+    display: block; width: 50px; margin: 0 auto;
+    img {}
+
+
+}
+
+// navigation
+.main-nav {
+    ul {
+        padding-top: 15px; margin-left: -14px;
+
+        @include respond-to(lg) {margin-left: 0;}
+
+        @include respond-to(md) {margin-left: 15px;}
+
+        @include respond-to(sm) {text-align: center; margin-bottom: 40px; margin-left: 0;}
+
+        @include respond-to(xs) {margin-bottom: 30px;}
+        li {
+            margin-right: 36px;
+            display: inline-block;
+
+            @include respond-to(md) {margin-right: 18px;}
+
+            @include respond-to(xs) {margin-right: 3px;}
+
+            @include respond-to(mobile) {margin-right: 0px;}
+
+            &:last-child {margin-right: 0px;}
+            a {
+                @include font-type($gray-color, $main-font, 14px, 14px, 0.7px); text-transform: uppercase;
+                padding-bottom: 30px; 
+
+                &.active {
+                    color: $blue-color;
+                    border-bottom: 4px solid $blue-color;
+                }
+
+                &:hover {color: $blue-color;}
+
+                @include respond-to(xs) {font-size: 13px; letter-spacing: 0.4px; padding-bottom: 20px;}
+            }
+            
+        }
+    }
+}
+
+// actions
+ul.actions {
+    padding-top: 15px;
+
+    @include respond-to(sm) {text-align: center;}
+    li {
+        margin-right: 24px;
+        display: inline-block;
+
+        @include respond-to(md) {margin-right: 10px;}
+        &:last-child {margin-right: 0px;}
+        a {
+            @include font-type($gray-color, $main-font, 14px, 14px, 0.7px); text-transform: uppercase;
+            i {
+                font-size: 18px;
+                margin-right: 9px;
+
+                 @include respond-to(xs) {font-size: 14px;}
+            }
+            span.numb {
+                color: $blue-color; margin-left: 3px;
+            }
+
+            &:hover {color: $blue-color;}
+
+            @include respond-to(xs) {font-size: 13px; letter-spacing: 0.4px; padding-bottom: 0px;}
+        }
+    }
+}
+
+// search
+form.search {
+    margin-top: 30px;
+    position: relative; display: none;
+    input {
+        @include font-type($gray-color, $second-font, 25px, 25px, 0px);
+        width: 100%; padding: 20px 25px;
+        border: 2px solid #ccc; @include border-radius(10px);
+
+        &:hover {border: 2px solid $gray-color;}
+
+        &:focus {border: 2px solid $gray-color;}
+    }
+    button {
+        @include font-type(#ccc, $second-font, 25px, 25px, 0px);
+        position: absolute; right: 3%; top: 33%;
+        border: none; background: transparent;
+
+        &:hover {color: $gray-color;}
+    }
+}
+
+// product_image
+figure.product_image {
+    margin-top: 99px;
+    
+    @include respond-to(sm) {width: 480px; margin: 90px auto 20px;}
+
+    @include respond-to(xs) {width: 320px;}
+    img {}
+}
+
+// product_decription
+article.product_decription {
+    @include respond-to(sm) {text-align: center;}
+    .like {
+        text-align: center;  line-height: 50px; 
+        width: 50px; height: 50px; margin-bottom: 41px;
+        border: 1px solid #e4e4e4; cursor: pointer;
+
+        @include respond-to(sm) {margin: 0 auto 20px;}
+        i {
+            color: #e4e4e4;
+        }
+        &:hover {
+            border: 1px solid #000;
+            i {color: #000;}
+        }
+    }
+    .product_name {
+        margin-bottom: 18px;
+        h2 {
+            @include font-type($gray-color, $main-font, 25px, 25px, 0px); text-transform: uppercase;
+            margin-bottom: 8px;
+
+            @include respond-to(md) {font-size: 23px; line-height: 23px;}
+
+            @include respond-to(xs) {font-size: 20px; line-height: 20px;}
+        }
+        h1 {
+            @include font-type($gray-color, $main-font, 35px, 35px, 0.8px); text-transform: uppercase;
+            margin-bottom: 4px;
+
+            @include respond-to(md) {font-size: 32px; line-height: 32px;}
+
+            @include respond-to(xs) {font-size: 28px; line-height: 28px;}
+        }
+        span {
+            @include font-type($light_gray-color, $main-font, 18px, 18px, 0px); 
+        }
+    }
+    .product_preview {
+        margin-bottom: 5px;
+        ul.colors {
+            margin-bottom: 12px;
+            li {
+                display: inline-block;
+                &:first-child {margin-right: 4px;}
+                @include font-type($light_gray-color, $main-font, 14px, 14px, 0.7px); text-transform: uppercase;
+                a {
+                    color: $blue-color; margin-left: -4px;
+                    &:hover {text-decoration: underline;} 
+
+                    &::before {
+                        content: '/';
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        figure.s_image {
+            display: inline-block; border: 1px solid  #e4e4e4; margin-right: 4px;
+            img {}
+        }
+    }
+    .product_size {
+        p {
+            @include font-type($light_gray-color, $second-font, 12px, 37px, 0.6px);
+        }
+       
+    }
+}
+
+// intro
+.intro {
+    h2 {
+       @include font-type($white-color, $main-font, 25px, 25px, 0.8px); text-transform: uppercase;
+       margin-bottom: 15px;
+
+       @include respond-to(md) {font-size: 23px; line-height: 23px; @include text-shadow(0px 0px 2px #000);}
+
+       @include respond-to(xs) {font-size: 20px; line-height: 20px;}
+    }
+    p {
+        @include font-type($white-color, $second-font, 14px, 25px, 0.2px);
+        margin-left: 3px;
+
+        @include respond-to(md) {@include text-shadow(0px 0px 2px #000);}
+    }
+
+}
+
+// info_story
+.info_story {
+    span {
+        @include font-type($light_gray-color, $main-font, 14px, 28px, 0.6px); text-transform: uppercase;
+    }
+    h2 {
+        @include font-type($gray-color, $main-font, 25px, 25px, 0.6px); text-transform: uppercase;
+        margin-bottom: 16px;
+
+        @include respond-to(md) {font-size: 23px; line-height: 23px;}
+
+        @include respond-to(xs) {font-size: 20px; line-height: 20px;}
+    }
+    p {
+        @include font-type($light_gray-color, $second-font, 14px, 25px, 0.3px);
+        margin-left: 2px;  margin-bottom: 36px;
+    }
+}
+
+// info_benefits
+.info_benefits {
+    span {
+        @include font-type($light_gray-color, $main-font, 14px, 24px, 0.6px); text-transform: uppercase;
+        display: block; margin-bottom: 17px;
+    }
+    h3 {
+        @include font-type($gray-color, $main-font, 18px, 23px, 0.9px); text-transform: uppercase;
+        margin-left: 2px;
+    }
+    small {
+        @include font-type($light_gray-color, $second-font, 12px, 20px, 0.2px);
+        display: block; margin-left: 2px; margin-bottom: 12px;
+    }
+}
+
+// sell_box
+aside.sell_box {
+    padding: 20px 25px 25px; margin-left: 18px; margin-top: 13px;
+    border: 4px solid #e4e4e4; background: #fff; width: 103%;
+
+    @include respond-to(lg) {width: 125%; margin-left: -54px;}
+
+    @include respond-to(md) {width: 100%; margin-left: 0px;}
+
+    @include respond-to(sm) {text-align: center; width: 320px; margin: 0 auto;}
+   
+    .product_name {
+        h2 {
+            @include font-type($gray-color, $main-font, 25px, 25px, 0.4px); text-transform: uppercase;
+            margin-bottom: 5px;
+
+            @include respond-to(xs) {font-size: 20px; line-height: 20px;}
+        }
+        span {
+            @include font-type($light_gray-color, $second-font, 14px, 14px, 0.3px);
+            display: block; margin-bottom: 16px;
+        }
+    }
+    .product_preview {
+        margin-bottom: 12px;
+        ul.colors {
+            margin-left: 4px; margin-bottom: 50px; 
+            li {
+                display: inline-block; margin-left: -3px;
+                a {
+                    @include font-type($blue-color, $main-font, 14px, 14px, 0.6px); text-transform: uppercase;
+
+                    &:before{
+                        content: '/';
+                        display: inline-block;
+                    }
+
+                    &:hover {text-decoration: underline;}
+
+                    @include respond-to(xs) {font-size: 12px; line-height: 12px;}
+                }
+            }
+        }
+        figure.s_image {
+            margin-bottom: 50px;
+
+            @include respond-to(sm) {width: 260px; margin: 0 auto 50px;}
+
+            @include respond-to(xs) {width: 200px;}
+            img {}
+        }
+        span {
+            @include font-type($gray-color, $main-font, 14px, 25px, 0.7px); text-transform: uppercase;
+
+            @include respond-to(xs) {font-size: 12px; letter-spacing: 0.4px; float: left;}
+        }
+        span.price {
+            float: right;
+            @include font-type($gray-color, $main-font, 18px, 25px, 0.7px); text-transform: uppercase;
+
+             @include respond-to(sm) {float: none; margin-left: 135px;}
+
+             @include respond-to(xs) {font-size: 12px; letter-spacing: 0.4px; float: right; margin-left: 0;}
+        }
+    }
+    .product_size {
+        a.button_white {
+           padding: 16px 14px 16px 19px;
+           i {margin-left: 50px;}
+        }
+        a.button_gray {
+            padding: 19px 25px 17px;
+        }
+    }
+}
+
+// social
+.social {
+    span {
+        @include font-type($light_gray-color, $main-font, 14px, 14px, 0.6px); text-transform: uppercase;
+        display: block; margin-bottom: 5px;
+    }
+    h2 {
+        @include font-type($gray-color, $main-font, 25px, 25px, 0.6px); text-transform: uppercase;
+        margin-bottom: 37px;
+
+        @include respond-to(md) {font-size: 23px; line-height: 23px;}
+    }
+}
+
+// social_img
+figure.social_img {
+
+}
+.jsCarousel {
+    .owl-controls {
+        .owl-nav { display: none;}
+        .owl-dots {
+            margin-top: 30px; text-align: center; margin-left: 10px;
+
+            @include respond-to(md) {margin-left: 0px}
+            .owl-dot {
+                display: inline-block; margin-right: 5px;
+                span {
+                    width: 16px; height: 16px;
+                    display: block;
+                    @include border-radius(50%); border: 2px solid #ccc; @include transition(all 0.2s);
+                  
+                }
+            &.active span {background: $blue-color; border: 2px solid $blue-color;}
+            &:hover span {@include transform(scale(1.2));}
+            &.active:hover span {@include transform(scale(1));}   
+            }
+        }
+    }
+}
+
+// footer-top
+.footer-top {
+    // logo
+    a.logo {
+        float: left;
+        img {}
+
+        @include respond-to(sm) {float: none;}
+    }
+
+    // footer_menu
+    ul.footer_menu {       
+        li {
+            a {
+                @include font-type($light_gray-color, $main-font, 14px, 25px, 0.7px); text-transform: uppercase;
+
+                &:hover {text-decoration: underline;}
+
+                @include respond-to(xs) {font-size: 12px; letter-spacing: 0.4px;}
+            }
+        }
+    }
+
+    // socials_block
+    .socials_block {
+        ul.socials {
+            margin-bottom: 24px;
+
+            @include respond-to(sm) {text-align: center; margin-top: 20px;}
+            li {
+                display: inline-block; margin-right: 6px; margin-bottom: 6px;
+                &:last-child {margin-right: 0px;}
+                a {
+                    line-height: 50px; text-align: center;
+                    display: block; width: 50px; height: 50px;
+                    border: 1px solid #252626;
+                    i {
+                       font-size: 18px; color:  $light_gray-color;
+                       
+                    }
+
+                    &:hover {
+                        border: 1px solid $blue-color;
+                        i {color: $blue-color;}
+                    }
+                }
+            }
+        }
+        form.input_cont {
+            position: relative;
+            input {
+                @include font-type($blue-color, $second-font, 14px, 14px, 0.3px);
+                @include input-placeholder {color: $light_gray-color; font-size: 14px; font-family: $second-font;}
+                border: none; border-bottom: 2px solid #252626; background: #0c0d0d;
+                padding-left: 30px; padding-bottom: 10px; width: 100%;
+
+                &:hover, &:focus {border-bottom: 2px solid $blue-color;}
+            }
+            button {
+                position: absolute; left: -3px; top: 0;
+                border: none; background: transparent;
+                i {
+                    color: #252626;
+                }
+                &:hover {
+                    i {color: $blue-color;}
+                }
+            }
+           
+        }
+    }
+
+}
+
+// footer-bottom
+.footer-bottom {
+    text-align: center;
+    small.copyright {
+        @include font-type($light_gray-color, $second-font, 12px, 12px, 0.3px);
+        a {
+            color: $light_gray-color;
+            &:hover {
+                color: $blue-color;
+            }
+        }
+
+        @include respond-to(xs) {font-size: 9px;}
+    }
+}
+
