@@ -3,10 +3,10 @@ $( document ).ready(function() {
     // JSsize
     $('.JsSize li').has('.dropMe').hover(
     		function() {
-    			$(this).find('.dropMe').slideDown();
+    			$(this).find('.dropMe').stop(true, true).slideDown();
     		},
     		function() {
-    			$(this).find('.dropMe').slideUp();
+    			$(this).find('.dropMe').stop(true, true).slideUp();
     		}
 	);
 
@@ -35,7 +35,6 @@ $( document ).ready(function() {
 	$('.JsSearchClick').click(function() {
 		$('.JsSearchField').slideToggle();
 	});
-
-	console.log(location);
+	
 });
 
