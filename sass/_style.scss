@@ -482,7 +482,7 @@ ul.dropMe {
 }  
                         // FOOTER__BOTTOM
 
-.f-bot {text-align: center}
+.f-bot {text-align: center;}
 .f-bot__copyright {
     @include font-type($light_gray-color, $second-font, 12px, 12px, 0.3px);
     @include respond-to(xs) {font-size: 9px;}
@@ -494,4 +494,25 @@ ul.dropMe {
     }
 }
 
+//                          PRODUCT_COVER PAGE
 
+.product-cover {padding: 130px 0 156px;}
+
+// moduls
+
+// product-cover__bar
+.product-cover__bar {}
+.pr-bar__item {
+    margin-bottom: 10px;
+}
+.pr-bar__link {}
+.pr-bar__img {
+    @extend .preview-image__item;
+}
+// product-cover__image
+.product-cover__image {
+    width: 85%; height: 80%;
+    margin: 46px 0 0 68px;
+}
+// product-cover__description
+.product-cover__description {margin-top: 17px; margin-left: 20px;}

@@ -694,7 +694,7 @@ a:hover {
 }
 
 /* line 248, ../sass/_style.scss */
-.preview-image__item {
+.preview-image__item, .pr-bar__img {
   width: 80px;
   height: 80px;
   padding: 22px 8px;
@@ -1302,4 +1302,27 @@ ul.dropMe li a {
 /* line 492, ../sass/_style.scss */
 .copyright__link:hover {
   color: #0089cf;
+}
+
+/* line 499, ../sass/_style.scss */
+.product-cover {
+  padding: 130px 0 156px;
+}
+
+/* line 505, ../sass/_style.scss */
+.pr-bar__item {
+  margin-bottom: 10px;
+}
+
+/* line 513, ../sass/_style.scss */
+.product-cover__image {
+  width: 85%;
+  height: 80%;
+  margin: 46px 0 0 68px;
+}
+
+/* line 518, ../sass/_style.scss */
+.product-cover__description {
+  margin-top: 17px;
+  margin-left: 20px;
 }

@@ -102,27 +102,53 @@
       </div>
 
 		</header>
-
-    <!-- PRODUCT section -->
-    <section class="product js-slideShowCont">
-
+    
+    <!-- section product-cover -->
+    <section class="product-cover js-slideShowCont">
+      
       <div class="container">
         <div class="row">
-          <div class="col-md-7 col-sm-7">
+          <div class="col-md-1">
 
-            <!-- product_image -->
-            <figure class="product__image js-slideshowDisplay">
-              <img class="img-responsive" src="img/product_image_pink.png"  alt="">
+            <!-- product-cover__bar -->
+            <div class="product-cover__bar pr-bar">
+              <figure class="pr-bar__item js-slideshowItem">
+                <a href="#" class="pr-bar__link js-slideshowLink">
+                  <img class="pr-bar__img" src="img/product_image_pink.png" alt="">
+                </a>
+              </figure>
+              <figure class="pr-bar__item js-slideshowItem">
+                <a href="#" class="pr-bar__link js-slideshowLink">
+                  <img class="pr-bar__img" src="img/product_cover_nike_side.png" alt="">
+                </a>
+              </figure>
+              <figure class="pr-bar__item js-slideshowItem">
+                <a href="#" class="pr-bar__link js-slideshowLink">
+                  <img class="pr-bar__img" src="img/product_cover_nike_face.png" alt="">
+                </a>
+              </figure>
+              <figure class="pr-bar__item js-slideshowItem">
+                <a href="#" class="pr-bar__link js-slideshowLink">
+                  <img class="pr-bar__img" src="img/product_cover_nike_back.png" alt="">
+                </a>
+              </figure>
+            </div>
+
+          </div>
+          
+          <div class="col-md-7">
+            
+            <!-- product-cover__image -->
+            <figure class="product-cover__image js-slideshowDisplay">
+              <img src="img/product_image_pink.png" class="img-responsive" alt="#">
             </figure>
 
           </div>
-          <div class="col-md-4 col-md-offset-1 col-sm-5">
+      
+          <div class="col-md-4">
             
-            <!-- product_decription -->
-            <article class="product-bar product__decription">
-              <div class="product-bar__like">
-                <i class="fa fa-heart-o"></i>
-              </div>
+            <!-- product-cover__description -->
+            <article class="product-cover__description product-bar">
               <div class="pr-name product-bar__name">
                 <h2 class="pr-name__brand">Nike</h2>
                 <h1 class="pr-name__title">AIR MAX TAVAS SD</h1>
@@ -167,171 +193,13 @@
                 </ul>
               </div>
             </article>
-
           </div>
         </div>
       </div>
-
-    </section>
-
-    <!-- INTRO section -->
-		<section class="intro">
-      
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            
-            <!-- intro -->
-            <div class="intro-text">
-              <h2 class="intro-text__title">CLASSIC CUSHIONING.MODERN COMFORT.</h2>
-              <p class="intro-text__text">The Nike Air Max Tavas SD Men's Shoe recalls the profile of the iconic running original with a Max Air unit in the heel and multi-surface Waffle outsole. A lightweight upper and gradient detail offer a comfortable fit and dynamic look.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- INFO section -->
-    <section class="info">
-      
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-5">
-            
-            <!-- info_story -->
-            <div class="story info__story">
-              <span class="story__s-title">story</span>
-              <h2 class="story__title">NIKE AIR MAX ORIGINS</h2>
-              <p class="story__text">Nike's revolutionary Air-Sole unit made its way into Nike footwear in the late '70s. In 1987, the Nike Air Max 1 debuted with visible air in its heel, allowing fans more than just the feel of Air-Sole comfort</p>
-            </div>
-            <!-- info_benefits -->
-            <div class="benefits info__benefits">
-              <span class="benefits__s-title">benefits</span>
-              <h3 class="benefits__title">Layered textile/synthetic upper</h3>
-              <small class="benefits__small">for lightweight durability and comfort </small>
-              <h3 class="benefits__title">Injected Phylon midsole doubles</h3>
-              <small class="benefits__small">Outsole to reduce the overall weight of the shoe</small>
-              <h3 class="benefits__title">Max Air heel unit </h3>
-              <small class="benefits__small">delivers maximum lightweight cushioning </small>
-              <h3 class="benefits__title">Rubber Waffle outsole </h3>
-              <small class="benefits__small">Durable, multi-surface traction</small>
-            </div>
-          </div>
-          <div class="col-md-3 col-md-offset-5 col-sm-5 col-sm-offset-2 col-xs-12 np">
-
-            <!-- sell_box -->
-            <aside class="info__sell-box">
-              <div class="sell-box__name sb-name">
-                <h2 class="sb-name__brand">Nike</h2>
-                <span class="sb-name__title">Air max Tavas SD</span>
-              </div>
-              <div class="sell-box__preview clearfix">
-                <ul class="preview-colors">
-                  <li class="preview-colors__item"><a class="preview-colors__link" href="#">black</a>/</li>
-                  <li class="preview-colors__item"><a class="preview-colors__link" href="#">Pink Pow</a>/</li>
-                  <li class="preview-colors__item"><a class="preview-colors__link" href="#">Tour Yellow</a>/</li>
-                  <li class="preview-colors__item"><a class="preview-colors__link" href="#">White</a></li>
-                </ul>
-                <figure class="sb-preview-image">
-                  <img class="img-responsive" src="img/wr-info_prod_img_small.png" alt="">
-                </figure>
-                <span class="sb-preview__status">on stock</span>
-                <span class="sb-preview__price">$ 160.00</span>
-              </div>
-              <div class="sell-box__size sb-size">
-                <ul class="sb-size__buttn sb-buttn JsSize">
-                  <li class="sb-buttn__item">
-                    <a href="#" class="sb-buttn__link sb-buttn__link_white">size<i class="icons-arrow"></i></a>
-                    <ul class="dropMe">
-                      <li><a href="#">40</a></li>
-                      <li><a href="#">41</a></li>
-                      <li><a href="#">42</a></li>
-                      <li><a href="#">43</a></li>
-                      <li><a href="#">44</a></li>
-                      <li><a href="#">45</a></li>
-                    </ul>
-                  </li>
-                  <li class="sb-buttn__item"><a href="#" class="sb-buttn__link sb-buttn__link_gray">add to cart</a></li>
-                </ul>
-              </div>
-            </aside>
-            
-          </div>
-        </div>
-      </div>
-
-    </section>
-    
-    <!-- SOCIAL section -->
-    <section class="social">
-      
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            
-            <!-- social -->
-            <div class="social__text s-text">
-              <span class="s-text__s-title">social</span>
-              <h2 class="s-text__title">#NIKEAIRMAX</h2>
-            </div>
-
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="jsCarousel">
-
-              <!-- social_img -->
-              <figure class="social__img">
-                <img class="img-responsive" src="img/wr-social_image_1.png" alt="">
-              </figure>
-                        
-               <!-- social_img -->
-              <figure  class="social_img">
-                <img class="img-responsive" src="img/wr-social_image_2.png" alt="">
-              </figure>
-           
-               <!-- social_img -->
-              <figure  class="social_img">
-                <img class="img-responsive" src="img/wr-social_image_3.png" alt="">
-              </figure>
-             
-              <!-- social_img -->
-              <figure  class="social_img">
-                <img class="img-responsive" src="img/wr-social_image_4.png" alt="">
-              </figure>
-
-              <!-- social_img -->
-              <figure class="social_img">
-                <img class="img-responsive" src="img/wr-social_image_1.png" alt="">
-              </figure>
-                        
-               <!-- social_img -->
-              <figure  class="social_img">
-                <img class="img-responsive" src="img/wr-social_image_2.png" alt="">
-              </figure>
-           
-               <!-- social_img -->
-              <figure  class="social_img">
-                <img class="img-responsive" src="img/wr-social_image_3.png" alt="">
-              </figure>
-             
-              <!-- social_img -->
-              <figure  class="social_img">
-                <img class="img-responsive" src="img/wr-social_image_4.png" alt="">
-              </figure>
-
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
     </section>
 
     <!-- footer -->
-		<footer class="footer">
+    <footer class="footer">
       <section class="footer__top f-top">
         
         <div class="container">
@@ -417,22 +285,22 @@
         </div>
 
       </section>
-			
-		</footer>
+      
+    </footer>
 
-	</div>
+  </div>
 
-	<!-- Plugins -->
-	<div class="popup"></div>
+  <!-- Plugins -->
+  <div class="popup"></div>
 
 
- 	<script type="text/javascript" src="js/libs/jquery-2.1.4.js"></script>
- 	<script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/libs/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/libs/owl.carousel.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
-	
-	  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

@@ -43,7 +43,7 @@ $( document ).ready(function() {
 
 		var $this = $(this),
 			item = $this.closest('.js-slideshowItem'),
-			container = $this.closest('.product'),
+			container = $this.closest('.js-slideShowCont'),
 			display = container.find('.js-slideshowDisplay'),
 			path = item.find('img').attr('src'),
 			duration = 250;
@@ -57,6 +57,10 @@ $( document ).ready(function() {
 			});
 		}
 
+	});
+
+	$('.buttn__link').click(function(e) {
+		e.preventDefault();
 	});
 	
 });
