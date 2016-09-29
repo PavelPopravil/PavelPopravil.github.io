@@ -7,7 +7,7 @@ $mysprite-layout:smart;
 @import "icons/*.png";
 @include all-icons-sprites;
 
-$icons: ('arrow');
+$icons: ('arrow', 'bullet__dot');
 
 @each $icons in $icons {
 	.icons-#{$icons} {
