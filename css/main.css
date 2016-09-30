@@ -273,14 +273,26 @@ a:hover {
   background-color: #fff;
   margin: 20px 0;
 }
+@media only screen and (max-width: 991px) {
+  /* line 31, ../sass/_style.scss */
+  .header {
+    padding: 21px 20px 20px;
+  }
+}
 
-/* line 32, ../sass/_style.scss */
+/* line 35, ../sass/_style.scss */
 .product {
   padding: 57px 50px 150px;
   background-color: #fff;
 }
+@media only screen and (max-width: 481px) {
+  /* line 35, ../sass/_style.scss */
+  .product {
+    padding: 50px 20px 150px;
+  }
+}
 
-/* line 33, ../sass/_style.scss */
+/* line 39, ../sass/_style.scss */
 .intro {
   background: url(../img/wr-intro_bg.png) no-repeat center center;
   background-size: cover;
@@ -291,15 +303,21 @@ a:hover {
   background-color: #fff;
 }
 @media only screen and (max-width: 767px) {
-  /* line 33, ../sass/_style.scss */
+  /* line 39, ../sass/_style.scss */
   .intro {
-    padding: 100px 0;
+    padding: 100px 50px;
+  }
+}
+@media only screen and (max-width: 481px) {
+  /* line 39, ../sass/_style.scss */
+  .intro {
+    padding: 50px 20px;
   }
 }
 
-/* line 40, ../sass/_style.scss */
+/* line 46, ../sass/_style.scss */
 .info {
-  background: #F5F5F5 url(../img/wr-info_bg.png) no-repeat center center;
+  background: #F5F5F5 url(../img/wr-info_bg.png) no-repeat left center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -307,61 +325,80 @@ a:hover {
   padding: 100px 50px 115px;
   background-color: #fff;
 }
+@media only screen and (max-width: 481px) {
+  /* line 46, ../sass/_style.scss */
+  .info {
+    padding: 50px 20px;
+  }
+}
 
-/* line 48, ../sass/_style.scss */
+/* line 53, ../sass/_style.scss */
 .social {
   padding: 111px 50px 207px;
   background-color: #fff;
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 48, ../sass/_style.scss */
+  /* line 53, ../sass/_style.scss */
   .social {
-    padding: 100px 0;
+    padding: 100px 50px;
+  }
+}
+@media only screen and (max-width: 481px) {
+  /* line 53, ../sass/_style.scss */
+  .social {
+    padding: 50px 20px;
   }
 }
 
-/* line 52, ../sass/_style.scss */
+/* line 58, ../sass/_style.scss */
 .footer {
   background: #0c0d0d;
   margin-bottom: 20px;
   padding: 0 50px;
 }
+@media only screen and (max-width: 481px) {
+  /* line 58, ../sass/_style.scss */
+  .footer {
+    padding: 0px 20px;
+  }
+}
 
-/* line 53, ../sass/_style.scss */
+/* line 62, ../sass/_style.scss */
 .footer__top {
   padding: 40px 0;
 }
 
-/* line 54, ../sass/_style.scss */
+/* line 63, ../sass/_style.scss */
 .footer__bottom {
   padding: 6px 0 34px;
 }
 
-/* line 62, ../sass/_style.scss */
+@media only screen and (max-width: 767px) {
+  /* line 68, ../sass/_style.scss */
+  .logo.header__logo {
+    width: 50px;
+    margin: 0 auto;
+  }
+}
+
+/* line 71, ../sass/_style.scss */
 .logo {
   display: block;
 }
 
-/* line 67, ../sass/_style.scss */
+/* line 76, ../sass/_style.scss */
 .header__navig {
   padding-top: 15px;
-  margin-left: -14px;
-}
-@media only screen and (max-width: 1199px) {
-  /* line 67, ../sass/_style.scss */
-  .header__navig {
-    margin-left: 0;
-  }
 }
 @media only screen and (max-width: 991px) {
-  /* line 67, ../sass/_style.scss */
+  /* line 76, ../sass/_style.scss */
   .header__navig {
     margin-left: 15px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 67, ../sass/_style.scss */
+  /* line 76, ../sass/_style.scss */
   .header__navig {
     text-align: center;
     margin-bottom: 40px;
@@ -369,41 +406,41 @@ a:hover {
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 67, ../sass/_style.scss */
+  /* line 76, ../sass/_style.scss */
   .header__navig {
     margin-bottom: 30px;
   }
 }
 
-/* line 82, ../sass/_style.scss */
+/* line 89, ../sass/_style.scss */
 .navig__item {
   margin-right: 36px;
   display: inline-block;
 }
 @media only screen and (max-width: 991px) {
-  /* line 82, ../sass/_style.scss */
+  /* line 89, ../sass/_style.scss */
   .navig__item {
-    margin-right: 18px;
+    margin-right: 10px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 82, ../sass/_style.scss */
+  /* line 89, ../sass/_style.scss */
   .navig__item {
     margin-right: 3px;
   }
 }
 @media only screen and (max-width: 332px) {
-  /* line 82, ../sass/_style.scss */
+  /* line 89, ../sass/_style.scss */
   .navig__item {
     margin-right: 0px;
   }
 }
-/* line 93, ../sass/_style.scss */
+/* line 100, ../sass/_style.scss */
 .navig__item:last-child {
   margin-right: 0px;
 }
 
-/* line 97, ../sass/_style.scss */
+/* line 104, ../sass/_style.scss */
 .navig__link {
   color: #333333;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -413,17 +450,17 @@ a:hover {
   text-transform: uppercase;
   padding-bottom: 30px;
 }
-/* line 101, ../sass/_style.scss */
+/* line 108, ../sass/_style.scss */
 .navig__link_active {
   color: #0089cf;
   border-bottom: 4px solid #0089cf;
 }
-/* line 106, ../sass/_style.scss */
+/* line 113, ../sass/_style.scss */
 .navig__link:hover {
   color: #0089cf;
 }
 @media only screen and (max-width: 481px) {
-  /* line 97, ../sass/_style.scss */
+  /* line 104, ../sass/_style.scss */
   .navig__link {
     font-size: 13px;
     letter-spacing: 0.4px;
@@ -431,39 +468,51 @@ a:hover {
   }
 }
 
-/* line 115, ../sass/_style.scss */
+/* line 122, ../sass/_style.scss */
 .actions.header__actions {
   padding-top: 15px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 115, ../sass/_style.scss */
+  /* line 122, ../sass/_style.scss */
   .actions.header__actions {
     text-align: center;
   }
 }
 
-/* line 122, ../sass/_style.scss */
+/* line 129, ../sass/_style.scss */
 .actions {
   float: right;
 }
+@media only screen and (max-width: 767px) {
+  /* line 129, ../sass/_style.scss */
+  .actions {
+    float: none;
+  }
+}
 
-/* line 124, ../sass/_style.scss */
+/* line 134, ../sass/_style.scss */
 .actions__item {
   margin-right: 24px;
   display: inline-block;
 }
 @media only screen and (max-width: 991px) {
-  /* line 124, ../sass/_style.scss */
+  /* line 134, ../sass/_style.scss */
+  .actions__item {
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 134, ../sass/_style.scss */
   .actions__item {
     margin-right: 10px;
   }
 }
-/* line 129, ../sass/_style.scss */
+/* line 140, ../sass/_style.scss */
 .actions__item:last-child {
   margin-right: 0px;
 }
 
-/* line 132, ../sass/_style.scss */
+/* line 143, ../sass/_style.scss */
 .actions__link {
   color: #333333;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -472,28 +521,28 @@ a:hover {
   letter-spacing: 0.7px;
   text-transform: uppercase;
 }
-/* line 134, ../sass/_style.scss */
+/* line 145, ../sass/_style.scss */
 .actions__link i {
   font-size: 18px;
   margin-right: 9px;
 }
 @media only screen and (max-width: 481px) {
-  /* line 134, ../sass/_style.scss */
+  /* line 145, ../sass/_style.scss */
   .actions__link i {
     font-size: 14px;
   }
 }
-/* line 141, ../sass/_style.scss */
+/* line 152, ../sass/_style.scss */
 .actions__link_numb span {
   color: #0089cf;
   margin-left: 3px;
 }
-/* line 146, ../sass/_style.scss */
+/* line 157, ../sass/_style.scss */
 .actions__link:hover {
   color: #0089cf;
 }
 @media only screen and (max-width: 481px) {
-  /* line 132, ../sass/_style.scss */
+  /* line 143, ../sass/_style.scss */
   .actions__link {
     font-size: 13px;
     letter-spacing: 0.4px;
@@ -501,18 +550,18 @@ a:hover {
   }
 }
 
-/* line 154, ../sass/_style.scss */
+/* line 165, ../sass/_style.scss */
 .search.header__search {
   margin-top: 30px;
 }
 
-/* line 157, ../sass/_style.scss */
+/* line 168, ../sass/_style.scss */
 .search {
   position: relative;
   display: none;
 }
 
-/* line 160, ../sass/_style.scss */
+/* line 171, ../sass/_style.scss */
 .search__input {
   color: #333333;
   font-family: "Roboto", sans-serif;
@@ -526,16 +575,16 @@ a:hover {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 165, ../sass/_style.scss */
+/* line 176, ../sass/_style.scss */
 .search__input:hover {
   border: 2px solid #333333;
 }
-/* line 167, ../sass/_style.scss */
+/* line 178, ../sass/_style.scss */
 .search__input:focus {
   border: 2px solid #333333;
 }
 
-/* line 169, ../sass/_style.scss */
+/* line 180, ../sass/_style.scss */
 .search__button {
   color: #ccc;
   font-family: "Roboto", sans-serif;
@@ -548,37 +597,34 @@ a:hover {
   border: none;
   background: transparent;
 }
-/* line 174, ../sass/_style.scss */
+/* line 185, ../sass/_style.scss */
 .search__button:hover {
   color: #333333;
 }
 
-/* line 180, ../sass/_style.scss */
+/* line 191, ../sass/_style.scss */
 .product__image {
   margin-top: 99px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 180, ../sass/_style.scss */
+  /* line 191, ../sass/_style.scss */
   .product__image {
-    width: 480px;
     margin: 90px auto 20px;
   }
 }
-@media only screen and (max-width: 481px) {
-  /* line 180, ../sass/_style.scss */
-  .product__image {
-    width: 320px;
-  }
-}
 
+/* line 202, ../sass/_style.scss */
+.product-bar {
+  min-width: 265px;
+}
 @media only screen and (max-width: 767px) {
-  /* line 192, ../sass/_style.scss */
+  /* line 202, ../sass/_style.scss */
   .product-bar {
     text-align: center;
   }
 }
 
-/* line 196, ../sass/_style.scss */
+/* line 207, ../sass/_style.scss */
 .product-bar__like {
   text-align: center;
   line-height: 50px;
@@ -589,30 +635,30 @@ a:hover {
   cursor: pointer;
 }
 @media only screen and (max-width: 767px) {
-  /* line 196, ../sass/_style.scss */
+  /* line 207, ../sass/_style.scss */
   .product-bar__like {
     margin: 0 auto 20px;
   }
 }
-/* line 203, ../sass/_style.scss */
+/* line 214, ../sass/_style.scss */
 .product-bar__like i {
   color: #e4e4e4;
 }
-/* line 206, ../sass/_style.scss */
+/* line 217, ../sass/_style.scss */
 .product-bar__like:hover {
   border: 1px solid #000;
 }
-/* line 208, ../sass/_style.scss */
+/* line 219, ../sass/_style.scss */
 .product-bar__like:hover i {
   color: #000;
 }
 
-/* line 212, ../sass/_style.scss */
+/* line 223, ../sass/_style.scss */
 .product-bar__name {
   margin-bottom: 18px;
 }
 
-/* line 216, ../sass/_style.scss */
+/* line 227, ../sass/_style.scss */
 .pr-name__brand, .sb-name__brand {
   color: #333333;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -623,21 +669,21 @@ a:hover {
   margin-bottom: 8px;
 }
 @media only screen and (max-width: 991px) {
-  /* line 216, ../sass/_style.scss */
+  /* line 227, ../sass/_style.scss */
   .pr-name__brand, .sb-name__brand {
     font-size: 23px;
     line-height: 23px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 216, ../sass/_style.scss */
+  /* line 227, ../sass/_style.scss */
   .pr-name__brand, .sb-name__brand {
     font-size: 20px;
     line-height: 20px;
   }
 }
 
-/* line 224, ../sass/_style.scss */
+/* line 235, ../sass/_style.scss */
 .pr-name__title {
   color: #333333;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -648,21 +694,21 @@ a:hover {
   margin-bottom: 4px;
 }
 @media only screen and (max-width: 991px) {
-  /* line 224, ../sass/_style.scss */
+  /* line 235, ../sass/_style.scss */
   .pr-name__title {
     font-size: 32px;
     line-height: 32px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 224, ../sass/_style.scss */
+  /* line 235, ../sass/_style.scss */
   .pr-name__title {
     font-size: 28px;
     line-height: 28px;
   }
 }
 
-/* line 232, ../sass/_style.scss */
+/* line 243, ../sass/_style.scss */
 .pr-name__price {
   color: #666666;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -671,17 +717,17 @@ a:hover {
   letter-spacing: 0px;
 }
 
-/* line 237, ../sass/_style.scss */
+/* line 248, ../sass/_style.scss */
 .product-bar__preview {
   margin-bottom: 5px;
 }
 
-/* line 238, ../sass/_style.scss */
+/* line 249, ../sass/_style.scss */
 .preview-colors {
   margin-bottom: 12px;
 }
 
-/* line 239, ../sass/_style.scss */
+/* line 250, ../sass/_style.scss */
 .preview-colors__item {
   display: inline-block;
   color: #666666;
@@ -692,22 +738,22 @@ a:hover {
   text-transform: uppercase;
 }
 
-/* line 243, ../sass/_style.scss */
+/* line 254, ../sass/_style.scss */
 .preview-colors__link {
   color: #0089cf;
 }
-/* line 245, ../sass/_style.scss */
+/* line 256, ../sass/_style.scss */
 .preview-colors__link:hover {
   text-decoration: underline;
 }
 
-/* line 247, ../sass/_style.scss */
+/* line 258, ../sass/_style.scss */
 .preview-image {
   display: inline-block;
   margin-right: 4px;
 }
 
-/* line 250, ../sass/_style.scss */
+/* line 261, ../sass/_style.scss */
 .preview-image__item, .pr-bar__img {
   width: 80px;
   height: 80px;
@@ -716,7 +762,7 @@ a:hover {
   border: 1px solid #e4e4e4;
 }
 
-/* line 257, ../sass/_style.scss */
+/* line 268, ../sass/_style.scss */
 .size__name {
   color: #666666;
   font-family: "Roboto", sans-serif;
@@ -725,13 +771,13 @@ a:hover {
   letter-spacing: 0.6px;
 }
 
-/* line 261, ../sass/_style.scss */
+/* line 272, ../sass/_style.scss */
 .buttn__item, .sb-buttn__item {
   display: inline-block;
   position: relative;
 }
 
-/* line 265, ../sass/_style.scss */
+/* line 276, ../sass/_style.scss */
 .buttn__link, .buttn__link_white, .sb-buttn__link_white, .buttn__link_gray, .sb-buttn__link_gray, .sb-buttn__link {
   color: #333333;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -742,34 +788,34 @@ a:hover {
   display: inline-block;
   margin-right: 6px;
 }
-/* line 268, ../sass/_style.scss */
+/* line 279, ../sass/_style.scss */
 .buttn__link:last-child, .buttn__link_white:last-child, .sb-buttn__link_white:last-child, .buttn__link_gray:last-child, .sb-buttn__link_gray:last-child, .sb-buttn__link:last-child {
   margin-right: 0px;
 }
 
-/* line 270, ../sass/_style.scss */
+/* line 281, ../sass/_style.scss */
 .buttn__link_white, .sb-buttn__link_white {
   border: 1px solid  #e4e4e4;
   padding: 16px 19px;
 }
-/* line 272, ../sass/_style.scss */
+/* line 283, ../sass/_style.scss */
 .buttn__link_white i, .sb-buttn__link_white i {
   top: 2px;
   margin-left: 55px;
 }
-/* line 275, ../sass/_style.scss */
+/* line 286, ../sass/_style.scss */
 .buttn__link_white:hover, .sb-buttn__link_white:hover {
   background: #ccc;
 }
 
-/* line 277, ../sass/_style.scss */
+/* line 288, ../sass/_style.scss */
 .buttn__link_gray, .sb-buttn__link_gray {
   color: #fff;
   background: #333333;
-  padding: 19px 30px 17px;
+  padding: 16px 30px 17px;
 }
 
-/* line 284, ../sass/_style.scss */
+/* line 295, ../sass/_style.scss */
 ul.dropMe {
   width: 95%;
   display: none;
@@ -778,18 +824,18 @@ ul.dropMe {
   left: 0;
   z-index: 100;
 }
-/* line 287, ../sass/_style.scss */
+/* line 298, ../sass/_style.scss */
 ul.dropMe li {
   text-align: center;
   display: inline-block;
   border: 1px solid  #e4e4e4;
   background: #fff;
 }
-/* line 292, ../sass/_style.scss */
+/* line 303, ../sass/_style.scss */
 ul.dropMe li:hover {
   background: #ccc;
 }
-/* line 294, ../sass/_style.scss */
+/* line 305, ../sass/_style.scss */
 ul.dropMe li a {
   color: #333333;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -801,7 +847,7 @@ ul.dropMe li a {
   display: block;
 }
 
-/* line 303, ../sass/_style.scss */
+/* line 314, ../sass/_style.scss */
 .intro-text__title {
   color: #ffffff;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -812,7 +858,7 @@ ul.dropMe li a {
   margin-bottom: 15px;
 }
 @media only screen and (max-width: 991px) {
-  /* line 303, ../sass/_style.scss */
+  /* line 314, ../sass/_style.scss */
   .intro-text__title {
     font-size: 23px;
     line-height: 23px;
@@ -820,14 +866,14 @@ ul.dropMe li a {
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 303, ../sass/_style.scss */
+  /* line 314, ../sass/_style.scss */
   .intro-text__title {
     font-size: 20px;
     line-height: 20px;
   }
 }
 
-/* line 309, ../sass/_style.scss */
+/* line 320, ../sass/_style.scss */
 .intro-text__text {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -837,18 +883,18 @@ ul.dropMe li a {
   margin-left: 3px;
 }
 @media only screen and (max-width: 991px) {
-  /* line 309, ../sass/_style.scss */
+  /* line 320, ../sass/_style.scss */
   .intro-text__text {
     text-shadow: 0px 0px 2px #000;
   }
 }
 
-/* line 317, ../sass/_style.scss */
+/* line 328, ../sass/_style.scss */
 .story {
   margin-bottom: 36px;
 }
 
-/* line 318, ../sass/_style.scss */
+/* line 329, ../sass/_style.scss */
 .story__s-title, .benefits__s-title, .pr-desc__s-title {
   color: #666666;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -858,7 +904,7 @@ ul.dropMe li a {
   text-transform: uppercase;
 }
 
-/* line 321, ../sass/_style.scss */
+/* line 332, ../sass/_style.scss */
 .story__title {
   color: #333333;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -869,21 +915,21 @@ ul.dropMe li a {
   margin-bottom: 16px;
 }
 @media only screen and (max-width: 991px) {
-  /* line 321, ../sass/_style.scss */
+  /* line 332, ../sass/_style.scss */
   .story__title {
     font-size: 23px;
     line-height: 23px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 321, ../sass/_style.scss */
+  /* line 332, ../sass/_style.scss */
   .story__title {
     font-size: 20px;
     line-height: 20px;
   }
 }
 
-/* line 327, ../sass/_style.scss */
+/* line 338, ../sass/_style.scss */
 .story__text {
   color: #666666;
   font-family: "Roboto", sans-serif;
@@ -893,13 +939,13 @@ ul.dropMe li a {
   margin-left: 2px;
 }
 
-/* line 335, ../sass/_style.scss */
+/* line 346, ../sass/_style.scss */
 .benefits__s-title {
   display: block;
   margin-bottom: 17px;
 }
 
-/* line 339, ../sass/_style.scss */
+/* line 350, ../sass/_style.scss */
 .benefits__title {
   color: #333333;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -910,7 +956,7 @@ ul.dropMe li a {
   margin-left: 2px;
 }
 
-/* line 343, ../sass/_style.scss */
+/* line 354, ../sass/_style.scss */
 .benefits__small {
   color: #666666;
   font-family: "Roboto", sans-serif;
@@ -922,30 +968,32 @@ ul.dropMe li a {
   margin-bottom: 12px;
 }
 
-/* line 349, ../sass/_style.scss */
+/* line 360, ../sass/_style.scss */
 .info__sell-box {
   padding: 20px 25px 25px;
   margin-left: 18px;
   margin-top: 13px;
   border: 4px solid #e4e4e4;
   background: #fff;
+  max-width: 301px;
+  min-width: 301px;
 }
 @media only screen and (max-width: 1199px) {
-  /* line 349, ../sass/_style.scss */
+  /* line 360, ../sass/_style.scss */
   .info__sell-box {
     width: 125%;
     margin-left: -54px;
   }
 }
 @media only screen and (max-width: 991px) {
-  /* line 349, ../sass/_style.scss */
+  /* line 360, ../sass/_style.scss */
   .info__sell-box {
     width: 100%;
     margin-left: 0px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 349, ../sass/_style.scss */
+  /* line 360, ../sass/_style.scss */
   .info__sell-box {
     text-align: center;
     width: 320px;
@@ -953,17 +1001,17 @@ ul.dropMe li a {
   }
 }
 
-/* line 356, ../sass/_style.scss */
+/* line 367, ../sass/_style.scss */
 .sb-name.sell-box__name {
   margin-bottom: 12px;
 }
 
-/* line 357, ../sass/_style.scss */
+/* line 368, ../sass/_style.scss */
 .sb-name__brand {
   margin-bottom: 5px;
 }
 
-/* line 361, ../sass/_style.scss */
+/* line 372, ../sass/_style.scss */
 .sb-name__title {
   color: #666666;
   font-family: "Roboto", sans-serif;
@@ -972,31 +1020,26 @@ ul.dropMe li a {
   letter-spacing: 0.3px;
 }
 
-/* line 364, ../sass/_style.scss */
-.sell-box__preview {
-  padding-right: 20px;
-}
-
-/* line 365, ../sass/_style.scss */
+/* line 376, ../sass/_style.scss */
 .sb-preview-image {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 365, ../sass/_style.scss */
+  /* line 376, ../sass/_style.scss */
   .sb-preview-image {
     width: 260px;
     margin: 0 auto 50px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 365, ../sass/_style.scss */
+  /* line 376, ../sass/_style.scss */
   .sb-preview-image {
     width: 200px;
   }
 }
 
-/* line 370, ../sass/_style.scss */
+/* line 381, ../sass/_style.scss */
 .sb-preview__status {
   color: #333333;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -1006,7 +1049,7 @@ ul.dropMe li a {
   text-transform: uppercase;
 }
 @media only screen and (max-width: 481px) {
-  /* line 370, ../sass/_style.scss */
+  /* line 381, ../sass/_style.scss */
   .sb-preview__status {
     font-size: 12px;
     letter-spacing: 0.4px;
@@ -1014,7 +1057,7 @@ ul.dropMe li a {
   }
 }
 
-/* line 374, ../sass/_style.scss */
+/* line 385, ../sass/_style.scss */
 .sb-preview__price {
   float: right;
   color: #333333;
@@ -1025,14 +1068,14 @@ ul.dropMe li a {
   text-transform: uppercase;
 }
 @media only screen and (max-width: 767px) {
-  /* line 374, ../sass/_style.scss */
+  /* line 385, ../sass/_style.scss */
   .sb-preview__price {
     float: none;
     margin-left: 135px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 374, ../sass/_style.scss */
+  /* line 385, ../sass/_style.scss */
   .sb-preview__price {
     font-size: 12px;
     letter-spacing: 0.4px;
@@ -1041,26 +1084,26 @@ ul.dropMe li a {
   }
 }
 
-/* line 388, ../sass/_style.scss */
+/* line 399, ../sass/_style.scss */
 .sb-buttn__link_white {
   padding: 16px 14px 16px 19px;
 }
-/* line 391, ../sass/_style.scss */
+/* line 402, ../sass/_style.scss */
 .sb-buttn__link_white i {
   margin-left: 50px;
 }
 
-/* line 393, ../sass/_style.scss */
+/* line 404, ../sass/_style.scss */
 .sb-buttn__link_gray {
-  padding: 19px 25px 17px;
+  padding: 16px 25px 17px;
 }
 
-/* line 399, ../sass/_style.scss */
+/* line 410, ../sass/_style.scss */
 .social__text {
   margin-bottom: 37px;
 }
 
-/* line 401, ../sass/_style.scss */
+/* line 412, ../sass/_style.scss */
 .s-text__s-title {
   color: #666666;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -1072,7 +1115,7 @@ ul.dropMe li a {
   margin-bottom: 5px;
 }
 
-/* line 405, ../sass/_style.scss */
+/* line 416, ../sass/_style.scss */
 .s-text__title {
   color: #333333;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -1082,35 +1125,35 @@ ul.dropMe li a {
   text-transform: uppercase;
 }
 @media only screen and (max-width: 991px) {
-  /* line 405, ../sass/_style.scss */
+  /* line 416, ../sass/_style.scss */
   .s-text__title {
     font-size: 23px;
     line-height: 23px;
   }
 }
 
-/* line 413, ../sass/_style.scss */
+/* line 424, ../sass/_style.scss */
 .jsCarousel .owl-controls .owl-nav {
   display: none;
 }
-/* line 414, ../sass/_style.scss */
+/* line 425, ../sass/_style.scss */
 .jsCarousel .owl-controls .owl-dots {
   margin-top: 30px;
   text-align: center;
   margin-left: 10px;
 }
 @media only screen and (max-width: 991px) {
-  /* line 414, ../sass/_style.scss */
+  /* line 425, ../sass/_style.scss */
   .jsCarousel .owl-controls .owl-dots {
     margin-left: 0px;
   }
 }
-/* line 417, ../sass/_style.scss */
+/* line 428, ../sass/_style.scss */
 .jsCarousel .owl-controls .owl-dots .owl-dot {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 419, ../sass/_style.scss */
+/* line 430, ../sass/_style.scss */
 .jsCarousel .owl-controls .owl-dots .owl-dot span {
   width: 16px;
   height: 16px;
@@ -1124,19 +1167,19 @@ ul.dropMe li a {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 424, ../sass/_style.scss */
+/* line 435, ../sass/_style.scss */
 .jsCarousel .owl-controls .owl-dots .owl-dot.active span {
   background: #0089cf;
   border: 2px solid #0089cf;
 }
-/* line 425, ../sass/_style.scss */
+/* line 436, ../sass/_style.scss */
 .jsCarousel .owl-controls .owl-dots .owl-dot:hover span {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
-/* line 426, ../sass/_style.scss */
+/* line 437, ../sass/_style.scss */
 .jsCarousel .owl-controls .owl-dots .owl-dot.active:hover span {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
@@ -1144,7 +1187,7 @@ ul.dropMe li a {
   transform: scale(1);
 }
 
-/* line 441, ../sass/_style.scss */
+/* line 452, ../sass/_style.scss */
 .f-menu__link {
   color: #666666;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -1153,42 +1196,42 @@ ul.dropMe li a {
   letter-spacing: 0.7px;
   text-transform: uppercase;
 }
-/* line 443, ../sass/_style.scss */
+/* line 454, ../sass/_style.scss */
 .f-menu__link:hover {
   text-decoration: underline;
 }
 @media only screen and (max-width: 481px) {
-  /* line 441, ../sass/_style.scss */
+  /* line 452, ../sass/_style.scss */
   .f-menu__link {
     font-size: 12px;
     letter-spacing: 0.4px;
   }
 }
 
-/* line 448, ../sass/_style.scss */
+/* line 459, ../sass/_style.scss */
 .f-social {
   margin-bottom: 24px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 448, ../sass/_style.scss */
+  /* line 459, ../sass/_style.scss */
   .f-social {
     text-align: center;
     margin-top: 20px;
   }
 }
 
-/* line 452, ../sass/_style.scss */
+/* line 463, ../sass/_style.scss */
 .f-social__item {
   display: inline-block;
   margin-right: 6px;
   margin-bottom: 6px;
 }
-/* line 454, ../sass/_style.scss */
+/* line 465, ../sass/_style.scss */
 .f-social__item:last-child {
   margin-right: 0px;
 }
 
-/* line 456, ../sass/_style.scss */
+/* line 467, ../sass/_style.scss */
 .f-social__link {
   line-height: 50px;
   text-align: center;
@@ -1197,26 +1240,26 @@ ul.dropMe li a {
   height: 50px;
   border: 1px solid #252626;
 }
-/* line 460, ../sass/_style.scss */
+/* line 471, ../sass/_style.scss */
 .f-social__link i {
   font-size: 18px;
   color: #666666;
 }
-/* line 461, ../sass/_style.scss */
+/* line 472, ../sass/_style.scss */
 .f-social__link:hover {
   border: 1px solid #0089cf;
 }
-/* line 463, ../sass/_style.scss */
+/* line 474, ../sass/_style.scss */
 .f-social__link:hover i {
   color: #0089cf;
 }
 
-/* line 466, ../sass/_style.scss */
+/* line 477, ../sass/_style.scss */
 .f-form {
   position: relative;
 }
 
-/* line 467, ../sass/_style.scss */
+/* line 478, ../sass/_style.scss */
 .f-form__input {
   color: #0089cf;
   font-family: "Roboto", sans-serif;
@@ -1228,7 +1271,7 @@ ul.dropMe li a {
   background: #0c0d0d;
   padding-left: 30px;
   padding-bottom: 10px;
-  width: 85%;
+  width: 100%;
 }
 /* line 61, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .f-form__input:-moz-placeholder {
@@ -1254,12 +1297,12 @@ ul.dropMe li a {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
-/* line 472, ../sass/_style.scss */
+/* line 483, ../sass/_style.scss */
 .f-form__input:hover, .f-form__input:focus {
   border-bottom: 2px solid #0089cf;
 }
 
-/* line 474, ../sass/_style.scss */
+/* line 485, ../sass/_style.scss */
 .f-form__button {
   position: absolute;
   left: -3px;
@@ -1267,21 +1310,21 @@ ul.dropMe li a {
   border: none;
   background: transparent;
 }
-/* line 477, ../sass/_style.scss */
+/* line 488, ../sass/_style.scss */
 .f-form__button i {
   color: #252626;
 }
-/* line 481, ../sass/_style.scss */
+/* line 492, ../sass/_style.scss */
 .f-form__button:hover i {
   color: #0089cf;
 }
 
-/* line 486, ../sass/_style.scss */
+/* line 497, ../sass/_style.scss */
 .f-bot {
   text-align: center;
 }
 
-/* line 487, ../sass/_style.scss */
+/* line 498, ../sass/_style.scss */
 .f-bot__copyright {
   color: #666666;
   font-family: "Roboto", sans-serif;
@@ -1290,49 +1333,49 @@ ul.dropMe li a {
   letter-spacing: 0.3px;
 }
 @media only screen and (max-width: 481px) {
-  /* line 487, ../sass/_style.scss */
+  /* line 498, ../sass/_style.scss */
   .f-bot__copyright {
     font-size: 9px;
   }
 }
 
-/* line 491, ../sass/_style.scss */
+/* line 502, ../sass/_style.scss */
 .copyright__link {
   color: #666666;
 }
-/* line 493, ../sass/_style.scss */
+/* line 504, ../sass/_style.scss */
 .copyright__link:hover {
   color: #0089cf;
 }
 
-/* line 500, ../sass/_style.scss */
+/* line 511, ../sass/_style.scss */
 .product-cover {
   padding: 130px 50px 156px;
   background-color: #fff;
   margin-bottom: 20px;
 }
 
-/* line 506, ../sass/_style.scss */
+/* line 517, ../sass/_style.scss */
 .pr-bar__item {
   margin-bottom: 10px;
 }
 
-/* line 514, ../sass/_style.scss */
+/* line 525, ../sass/_style.scss */
 .pr-bar__img_cloth {
   padding: 0px 10px;
 }
 
-/* line 521, ../sass/_style.scss */
+/* line 532, ../sass/_style.scss */
 .product-cover__image {
   margin: 25px auto 0;
 }
 
-/* line 524, ../sass/_style.scss */
+/* line 535, ../sass/_style.scss */
 .product-cover__image_cloth {
   margin: 0 auto;
 }
 
-/* line 525, ../sass/_style.scss */
+/* line 536, ../sass/_style.scss */
 .pr-name__type-of-cloth {
   color: #333333;
   font-family: "DINNextLTProMediumCond", sans-serif;
@@ -1343,17 +1386,17 @@ ul.dropMe li a {
   margin-bottom: 5px;
 }
 
-/* line 530, ../sass/_style.scss */
+/* line 541, ../sass/_style.scss */
 .product-cover__description {
   margin-left: 20px;
 }
 
-/* line 532, ../sass/_style.scss */
+/* line 543, ../sass/_style.scss */
 .product-bar__description {
   margin-bottom: 10px;
 }
 
-/* line 534, ../sass/_style.scss */
+/* line 545, ../sass/_style.scss */
 .pr-desc__text {
   color: #666666;
   font-family: "Roboto", sans-serif;
@@ -1362,7 +1405,7 @@ ul.dropMe li a {
   letter-spacing: 0.3px;
 }
 
-/* line 538, ../sass/_style.scss */
+/* line 549, ../sass/_style.scss */
 .bullet__item {
   color: #a0a0a0;
   font-family: "Roboto", sans-serif;
@@ -1371,7 +1414,7 @@ ul.dropMe li a {
   letter-spacing: 0.3px;
 }
 
-/* line 539, ../sass/_style.scss */
+/* line 550, ../sass/_style.scss */
 .icons-bullet__dot {
   top: 10px;
   margin-right: 14px;
