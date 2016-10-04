@@ -1,5 +1,18 @@
 $( document ).ready(function() {
     
+
+	// navig-trigger
+
+	$('.js-triggerLink').on('click', function(e) {
+
+		e.preventDefault();
+		$('.js-triggerLink').toggleClass('opened');
+
+		$('.js-navigation').slideToggle(400, function() {
+			$(this).toggleClass('nav-expanded').css('display', '');
+		});
+	});
+
     // JSsize
     $('.JsSize li').has('.dropMe').hover(
     		function() {

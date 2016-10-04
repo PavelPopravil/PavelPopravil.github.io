@@ -71,6 +71,42 @@ a {
 .logo {
     display: block; 
 }
+// menu-trigger
+.trigger {
+    display: none;
+    @include respond-to(xs) {display: block;}  
+}
+.trigger__link {
+    @include font-type($blue-color, $main-font, 16px, 30px, 0.7px); text-transform: uppercase;
+}
+// burger
+.trigger__burger {
+    float: right;
+    width: 30px; height: 30px;
+    padding: 3px;
+    cursor: pointer;
+    border: 2px solid $blue-color;
+
+    &.opened {
+
+        .burger__item:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .burger__item:nth-child(2) {
+           opacity: 0;
+        }
+        .burger__item:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    }
+}
+.burger__item {
+    display: block;
+    width: 20px; height: 3px;
+    margin-bottom: 5px;
+    background-color: $blue-color;
+    @include transition(all 0.2s ease-out);
+}
 
 // navigation
 .header__navig {
@@ -79,12 +115,17 @@ a {
 
     @include respond-to(md) {margin-left: 15px;}
 
-    @include respond-to(sm) {text-align: center; margin-bottom: 40px; margin-left: 0;}
+    @include respond-to(sm) {text-align: center; margin-bottom: 30px; margin-left: 0;}
 
-    @include respond-to(xs) {margin-bottom: 30px;}  
+    @include respond-to(xs) {
+        margin-bottom: 10px; text-align: left; display: none;
+        &.nav-expanded {display: block;}
+    }  
 }
 
-.navig {}
+.navig {
+    @include respond-to(xs) {}
+}
 
 .navig__item {
 
@@ -93,26 +134,30 @@ a {
 
     @include respond-to(md) {margin-right: 10px;}
 
-    @include respond-to(xs) {margin-right: 3px;}
-
-    @include respond-to(mobile) {margin-right: 0px;}
-
+    @include respond-to(xs) {display: block; margin-right: 0px; }
+    
     &:last-child {margin-right: 0px;}
+
+
 
 }
 
 .navig__link {
     @include font-type($gray-color, $main-font, 14px, 14px, 0.7px); text-transform: uppercase;
-    padding-bottom: 30px; 
+    padding-bottom: 30px; display: block;
 
     &_active {
         color: $blue-color;
         border-bottom: 4px solid $blue-color;
+
+        @include respond-to(xs) {border: none;}
     }
 
     &:hover {color: $blue-color;}
-
-    @include respond-to(xs) {font-size: 13px; letter-spacing: 0.4px; padding-bottom: 20px;}
+    
+    @include respond-to(xs) {
+        font-size: 16px; letter-spacing: 0.7px; padding: 10px 0px;
+    }
 }                   
               
 
@@ -508,7 +553,10 @@ ul.dropMe {
 
 //                          PRODUCT_COVER PAGE
 
-.product-cover {padding: 130px 50px 156px; background-color: #fff; margin-bottom: 20px;}
+.product-cover {
+    padding: 130px 50px 156px; background-color: #fff; margin-bottom: 20px;
+    @include respond-to(sm) {padding: 130px 20px 156px;}  
+}
 
 // moduls
 
@@ -516,35 +564,56 @@ ul.dropMe {
 .product-cover__bar {}
 .pr-bar__item {
     margin-bottom: 10px;
+
 }
 
 .pr-bar__link {}
 .pr-bar__img {
     @extend .preview-image__item;
-}
+    @include respond-to(xs) {
+        width: 50px; height: 50px; padding: 10px 5px;
+    }
+ }
 .pr-bar__img_cloth {
     padding: 0px 10px;
 }
 // product-cover__image
 .product-cover__image-cont {
-    
+    @include respond-to(md) {
+        height: 350px;
+        position: relative;       
+    }
+    @include respond-to(xs) {height: 230px;}
 }
 .product-cover__image {
     margin: 25px auto 0;
+    @include respond-to(md) {position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;}
+    @include respond-to(sm) {max-width: 80%;}   
 }
-.product-cover__image_cloth {margin: 0 auto;}
+.product-cover__image_cloth {
+    @include respond-to(sm) {max-width: 45%;}
+    
+}
 .pr-name__type-of-cloth {
     @include font-type($gray-color, $main-font, 18px, 25px, 0.3px); text-transform: uppercase;
     margin-bottom: 5px;
 }
 // product-cover__description
-.product-cover__description {margin-left: 20px;}
+.product-cover__description {
+    margin-left: 20px;
+    @include respond-to(md) {margin: 20px auto 0; text-align: center;}
+    
+}
 // product-bar__description
 .product-bar__description {margin-bottom: 10px;}
 .pr-desc__s-title {@extend .story__s-title;}
 .pr-desc__text {
     @include font-type($light_gray-color, $second-font, 14px, 25px, 0.3px);
+    @include respond-to(xs) {font-size: 13px; line-height: 20px;} 
 }
 .pr-desc__bullet {}
-.bullet__item {@include font-type(#a0a0a0, $second-font, 12px, 25px, 0.3px);}
+.bullet__item {
+    @include font-type(#a0a0a0, $second-font, 12px, 25px, 0.3px);
+
+}
 .icons-bullet__dot {top: 10px; margin-right: 14px;}
