@@ -8,7 +8,7 @@ $( document ).ready(function() {
 		e.preventDefault();
 		$('.js-triggerLink').toggleClass('opened');
 
-		$('.js-navigation').slideToggle(400, function() {
+		$('.js-navigation').stop(true, true).slideToggle(400, function() {
 			$(this).toggleClass('nav-expanded').css('display', '');
 		});
 	});
@@ -44,10 +44,6 @@ $( document ).ready(function() {
 	    }
 	})
 
-	// Search
-	$('.JsSearchClick').click(function() {
-		$('.JsSearchField').slideToggle();
-	});
 
 	// SLIDESHOW 
 

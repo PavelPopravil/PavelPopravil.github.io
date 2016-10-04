@@ -9,6 +9,7 @@ $blue-color: #0089cf;
 $white-color: #ffffff;
 $gray-color: #333333;
 $light_gray-color: #666666;
+$bg-color: #e6edf1;
 
 
 // preloader
@@ -27,11 +28,12 @@ a {
 
 
 // application
-.app {min-width: 320px; background-color: #c8cfdc;}
+.app {min-width: 320px; background-color: $bg-color;}
 .header {
     padding: 21px 50px 20px; background-color: #fff; margin: 20px 0;
     @include respond-to(md) {padding: 21px 20px 20px;}
-} 
+}
+.header__search {background-color: inherit;}
 .product {
     padding: 57px 50px 150px; background-color: #fff;
     @include respond-to(xs) {padding: 50px 20px 150px;}
@@ -198,37 +200,15 @@ a {
             color: $blue-color; margin-left: 3px;
         }
     }
+
+    &_active {
+        color: $blue-color;
+    }
     
     &:hover {color: $blue-color;}
 
     @include respond-to(xs) {font-size: 13px; letter-spacing: 0.4px; padding-bottom: 0px;}
-}     
-    
-
-
-// search
-.search.header__search {
-    margin-top: 30px;
-}
-.search {
-    position: relative; display: none;
-}
-.search__input {
-    @include font-type($gray-color, $second-font, 25px, 25px, 0px);
-    width: 100%; padding: 20px 25px;
-    border: 2px solid #ccc; @include border-radius(10px);
-
-    &:hover {border: 2px solid $gray-color;}
-
-    &:focus {border: 2px solid $gray-color;}
-}
-.search__button {
-    @include font-type(#ccc, $second-font, 25px, 25px, 0px);
-    position: absolute; right: 3%; top: 33%;
-    border: none; background: transparent;
-
-    &:hover {color: $gray-color;}
-}
+}       
 
                 // PRODUCT SECTION
 
@@ -591,6 +571,7 @@ ul.dropMe {
     @include respond-to(sm) {max-width: 80%;}   
 }
 .product-cover__image_cloth {
+    max-height: 420px;
     @include respond-to(sm) {max-width: 45%;}
     
 }
@@ -617,3 +598,87 @@ ul.dropMe {
 
 }
 .icons-bullet__dot {top: 10px; margin-right: 14px;}
+
+                    // SEARCH PAGE
+.search-field {
+    padding: 24px 50px 35px;
+    @include respond-to(xs) {padding: 24px 20px 35px;} 
+}
+// moduls
+
+// search-field__form
+.search-field__form {}
+.search {
+    position: relative;
+}
+.search__text-block {
+    margin-bottom: 32px;
+}
+.text-block {}
+.text-block__title {
+    @include font-type($gray-color, $main-font, 18px, 25px, 0.4px); text-transform: uppercase;
+}
+.text-block__tip {
+    @include font-type($light_gray-color, $second-font, 14px, 25px, 0.4px);
+}
+.text-block__close {
+    position: absolute; top: 1%; right: 2%;
+    color: $light_gray-color; font-size: 28px;
+    i {
+        top: 4px;
+    }
+}
+.search__input {
+    @include font-type($blue-color, $main-font, 60px, 80px, 0.7px); text-transform: uppercase;
+    width: 100%;
+    border: none; border-bottom: 1px solid $light_gray-color; background-color: inherit;
+    @include respond-to(sm) {font-size: 40px; line-height: 50px;}
+    @include respond-to(xs) {font-size: 24px; line-height: 32px;}
+}
+.search__button {
+    color: $light_gray-color; font-size: 33px;
+    position: absolute; top: 90px; right: 27px;
+    background-color: inherit; border: none;
+    @include respond-to(sm) {font-size: 26px;}
+    @include respond-to(xs) {font-size: 19px; top: 89px; right: 3px;}
+}
+.search-product {
+    padding: 0px 50px 50px;
+    @include respond-to(xs) {padding: 0px 20px 50px;} 
+}
+
+.search-product__type-of-cloth {
+    @include font-type($light_gray-color, $main-font, 18px, 25px, 0.4px); text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.type-of-cloth__quality {
+    color: $blue-color;
+}
+.search-product__block {
+    @include respond-to(md) {margin-bottom: 20px;}
+}
+.pr-block {
+    background-color: #fff; text-align: center;
+    height: 430px; position: relative;
+    @include respond-to(xs) {height: 360px;} 
+}
+.pr-block__img-cont {}
+.pr-block__img {
+    position: absolute; left: 0; top: 0; right: 0; bottom: 15%; margin: auto; max-height: 200px;
+    @include respond-to(lg) {max-width: 190px;}
+}
+.pr-block__description {}
+.bl-description {
+   position: absolute; left: 0; top: 69%; right: 0; bottom: 0; margin: auto;
+}
+.bl-description__brand {
+    @include font-type($gray-color, $main-font, 18px, 25px, 0.4px); text-transform: uppercase;
+}
+.bl-description__features {
+    display: block; margin-bottom: 16px;
+    @include font-type($light_gray-color, $second-font, 14px, 25px, 0.4px);
+}
+.bl-description__price {
+    display: block;
+    @extend .bl-description__brand;
+}
