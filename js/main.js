@@ -13,6 +13,19 @@ $( document ).ready(function() {
 		});
 	});
 
+	// cart
+
+	$('.js-paymentCall').on('click', function(e){
+		e.preventDefault();
+
+		$('body').toggleClass('sidebarOn');
+	});
+
+	$('.js-closeCart').click(function(e) {
+		e.preventDefault();
+		$('body').removeClass('sidebarOn');
+	});
+
     // JSsize
     $('.JsSize li').has('.dropMe').hover(
     		function() {

@@ -4,12 +4,17 @@
 $main-font: 'DINNextLTProMediumCond', sans-serif;
 $second-font: 'Roboto', sans-serif;
 
+/*width */
+$payment-width: 35.625em;
+$m-payment-width: 20em;
+
 /* colors */
 $blue-color: #0089cf;
 $white-color: #ffffff;
 $gray-color: #333333;
 $light_gray-color: #666666;
-$bg-color: #e6edf1;
+$bg-color:#e6edf1;
+$input-color: #ccc;
 
 
 // preloader
@@ -208,7 +213,220 @@ a {
     &:hover {color: $blue-color;}
 
     @include respond-to(xs) {font-size: 13px; letter-spacing: 0.4px; padding-bottom: 0px;}
-}       
+} 
+
+                // PAYMENT SECTION
+
+.payment-section {
+    width: $payment-width;
+    position: absolute; top: 0; right: 0; z-index: 1;
+    @include transform(translateX($payment-width));
+    @include transition(0.3s);
+    @include respond-to(sm) {
+        width: $m-payment-width;
+        @include transform(translateX($m-payment-width));
+    }
+}
+
+// paymentCall styles
+.siteContainer {
+    height: 100%; overflow: hidden;
+}
+.sitePusher {
+   @include transform(translateX(0px));
+   @include transition(0.3s);
+   height: 100%;
+}
+
+.sidebarOn {
+    .sitePusher {
+        @include transform(translateX($payment-width * -1));
+        @include respond-to(sm) {
+            @include transform(translateX($m-payment-width * -1));
+        }
+    }
+    .site-cache {
+        position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+
+// moduls
+
+.payment {
+    padding: 2.188em 2.5em;
+    background-color: #fff; 
+    @include respond-to(sm) {
+        padding: 2.188em 1.250em;
+        position: relative;
+    }
+
+}
+.payment__close {
+    display: none;
+    @include respond-to(sm) {
+        display: block;
+        position: absolute; top: 38px; right: 25px;
+        i {
+            color: $gray-color;
+        }
+    }
+}
+// payment__title
+.payment__title {
+     @include font-type($gray-color, $main-font, 2.188rem, 2.625rem, 1px); text-transform: uppercase;
+     margin-bottom: 16px;
+}
+.p-info {}
+.p-info__title {
+    @include font-type($gray-color, $main-font, 0.875rem, 1.563rem, 0.7px); text-transform: uppercase;
+    margin-left: 1px; margin-bottom: 7px;
+}
+.p-info__form {}
+.select-cont {
+    overflow: hidden; background-color: inherit; width: 230px;
+    position: relative;
+    i {position: absolute; top: 5px; right: 3px;}
+    @include respond-to(sm) {width: 277px;}
+}
+.p-info__input {
+    @include font-type($light_gray-color, $second-font, 0.875rem, 1.563rem, 0.4px);
+    padding-bottom: 0.563em; width: 47%; display: inline-block; margin-bottom: 0.5em;
+    border: none; border-bottom: 1px solid $input-color;
+    @include respond-to(sm) {
+        width: 99%;
+    }
+    
+}
+.p-info__input_sel {
+    background-color: transparent; width: 100%;
+    text-overflow : »;
+    @include appearance(none);
+}
+.p-info__input.mr-20 {margin-right: 20px;}
+.p-info__input_large {
+    width: 99%;
+}
+.cart {
+    padding: 2.188em 2.5em; 
+    background-color: #f2f9fd;
+    @include respond-to(sm) {
+        padding: 2.188em 1.250em;
+    }
+}
+.cart__table {}
+.table__title {
+    @extend .p-info__title;
+    padding: 1.5em 0;
+}
+.cart__item {
+    border-bottom: 1px solid $input-color; 
+    border-top: 1px solid $input-color; 
+}
+.cart__product-quantity {
+    padding: 1.250em 0;
+}
+.quantity {
+    width: 1.250em;
+}
+.quantity__button {
+    font-size: 1rem;
+    display: block; width: 1.250em; height: 1.250em;
+    border: none; background-color: inherit;
+    color: $light_gray-color;
+}
+.quantity__button_minus {}
+.quantity__button_plus {}
+.quantity__button_number {
+    -moz-appearance: textfield;
+    text-align: center;
+}
+.cart__product-img-cont {}
+.cart__product-image {
+   width: 4.375em; height: 4.375em; padding: 1.063em 0.313em;  margin-left: -26px;
+}
+.cart__product-image_cloth {padding: 5px;}
+
+.cart__product-name {
+    padding-left: 1.250em;
+    @include respond-to(sm) {padding-left: 0; max-width: 80px;}
+}
+.cart__pr-brand {
+    @include font-type($gray-color, $main-font, 1.125rem, 1.2rem, 0.4px); text-transform: uppercase;
+    @include respond-to(sm) {font-size: 14px; line-height: 18px;}
+}
+.cart__pr-model {
+    @include font-type($light_gray-color, $second-font, 0.875rem, 1.2rem, 0px);
+    @include respond-to(sm) {font-size: 12px; line-height: 16px;}
+}
+.cart__pr-size {
+    padding-left: 2.563em; 
+    @include respond-to(sm) {padding-left: 0; text-align: center;} 
+}
+.cart__size-title {
+    @include font-type($gray-color, $main-font, 0.875rem, 2.188rem, 0.8px); text-transform: uppercase;
+    display: inline-block; vertical-align: middle; margin-right: 16px;
+    @include respond-to(sm) {
+        margin-right: 0px; font-size: 12px; line-height: 16px; display: block;
+    }
+}
+.cart__size-quantity {
+    @include font-type($gray-color, $main-font, 0.875rem, 1.875rem, 0.8px); text-align: center;
+    display: inline-block; width: 30px; height: 30px;
+    background-color: #d9e0e3; 
+}
+.cart__pr-price {
+    @include font-type($light-gray-color, $main-font, 0.875rem, 1.563rem, 0.4px);
+    padding-left: 2.563em;
+    @include respond-to(sm) {padding-left: 0; font-size: 12px; width: 50px; text-align: right;}
+}
+
+.cart__item-total {@include font-type($gray-color, $main-font, 0.875rem, 2.188rem, 0.8px); text-transform: uppercase;}
+.item-total__title {
+    text-align: left;
+    @include respond-to(sm) {font-size: 14px;}
+}
+.item-total__price {
+    text-align: right;
+    @include respond-to(sm) {font-size: 12px;}
+}
+
+// cart__terms-block
+
+.cart__terms-block {
+    position: relative; height: 100px;
+    @include respond-to(sm) {text-align: center;}
+}
+
+// checkbox styles
+.cart__check {
+    display: none;
+}
+.cart__terms {
+    @include font-type($light-gray-color, $second-font, 0.875rem, 1.563rem, 0.4px);
+    cursor: pointer;
+}
+.cart__check + .cart__terms:before {
+    content: '';
+    display: inline-block; width: 14px; height: 14px; margin-right: 8px;
+    position: relative; top: 2px;
+    background-color: #fff;
+    @include box-shadow(inset 0px 0px 0px 1px rgba(150, 150, 150, 0.8));
+}
+.cart__check:checked + .cart__terms:before {
+    background-color: #0089cf;
+     @include box-shadow(
+            inset 0px 0px 0px 1px rgba(150, 150, 150, 0.8),
+            inset 0px 0px 0px 3px rgba(255, 255, 255, 1));
+}
+.cart-terms__link {}
+.cart__submit {
+    @extend .buttn__link_gray;
+    position: absolute; bottom: 0; right: 0;
+    padding: 20px 73px !important;
+     @include respond-to(sm) {right: 38px;}
+}
 
                 // PRODUCT SECTION
 

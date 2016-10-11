@@ -45,64 +45,192 @@
 	<div class="preloader"></div>
 
 	<!-- Application -->
-	<div class="app">
+<div class="siteContainer">
+	<div class="app sitePusher">
 
 
     <!-- header -->
 		
 
-			<div class="container-fluid">
-        <header class="header">
-          <div class="row">
-            <div class="col-md-1 col-sm-1 col-xs-12">
+		<div class="container-fluid">
+      <header class="header">
+        <div class="row">
+          <div class="col-md-1 col-sm-1 col-xs-12">
 
-              <!-- logo -->
-                <a class="logo header__logo" href="#">
-                  <img src="img/logo_icon.jpg" alt="">
-                </a>
-              
-            </div>
-            <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 np-l">
-              
-              <!-- menu-trigger -->
-              <div class="trigger header__menu-trigger">
-                <a class="trigger__link js-triggerLink" href="#">Menu</a>
-                <div class="trigger__burger js-triggerLink">
-                  <span class="burger__item"></span>
-                  <span class="burger__item"></span>
-                  <span class="burger__item"></span>
-                </div>
-              </div>
-
-              <!-- navigation -->
-              <nav class="header__navig js-navigation">
-                <ul class="navig">
-                  <li class="navig__item"><a class="navig__link" href="index.html">footwear</a></li>
-                  <li class="navig__item"><a class="navig__link navig__link_active" href="#">clothing</a></li>
-                  <li class="navig__item"><a class="navig__link" href="#">accessories</a></li>
-                  <li class="navig__item"><a class="navig__link" href="#">brands</a></li>
-                  <li class="navig__item"><a class="navig__link" href="#">exclusive</a></li>
-                </ul>
-              </nav>
-
-            </div>
-
-            <div class="col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12">
-              
-              <!-- actions -->
-              <ul class="actions header__actions">
-                <li class="actions__item"><a href="search.html" class="actions__link"><i class="fa fa-search"></i>search</a></li>
-                <li class="actions__item"><a href="#" class="actions__link actions__link_numb"><i class="fa fa-shopping-cart"></i>cart<span class="numb">(2)</span></a></li>
-                <li class="actions__item"><a href="#" class="actions__link"><i class="fa fa-user"></i>sign in</a></li>
-              </ul>
-              
-            </div>
+            <!-- logo -->
+              <a class="logo header__logo" href="#">
+                <img src="img/logo_icon.jpg" alt="">
+              </a>
+            
           </div>
-  
-        </header>
-      </div>
+          <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 np-l">
+            
+            <!-- menu-trigger -->
+            <div class="trigger header__menu-trigger">
+              <a class="trigger__link js-triggerLink" href="#">Menu</a>
+              <div class="trigger__burger js-triggerLink">
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+              </div>
+            </div>
 
-		
+            <!-- navigation -->
+            <nav class="header__navig js-navigation">
+              <ul class="navig">
+                <li class="navig__item"><a class="navig__link" href="index.html">footwear</a></li>
+                <li class="navig__item"><a class="navig__link navig__link_active" href="#">clothing</a></li>
+                <li class="navig__item"><a class="navig__link" href="#">accessories</a></li>
+                <li class="navig__item"><a class="navig__link" href="#">brands</a></li>
+                <li class="navig__item"><a class="navig__link" href="#">exclusive</a></li>
+              </ul>
+            </nav>
+
+          </div>
+
+          <div class="col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12">
+            
+            <!-- actions -->
+            <ul class="actions header__actions">
+              <li class="actions__item"><a href="search.html" class="actions__link"><i class="fa fa-search"></i>search</a></li>
+              <li class="actions__item"><a href="#" class="actions__link actions__link_numb js-paymentCall"><i class="fa fa-shopping-cart"></i>cart<span class="numb">(2)</span></a></li>
+              <li class="actions__item"><a href="#" class="actions__link"><i class="fa fa-user"></i>sign in</a></li>
+            </ul>
+            
+          </div>
+        </div>
+
+      </header>
+    </div>
+
+    <!-- PAYMENT  -->
+
+		<section class="payment-section">
+      <div class="payment">
+        <a href="#" class="payment__close js-closeCart"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <h2 class="payment__title">Informations</h2>
+        <div class="payment__pers-info p-info">
+          <h3 class="p-info__title">Personnal informations</h3>
+          <form action="" class="p-info__form">
+            <div class="select-cont">
+              <select name="" id="" class="p-info__input p-info__input_sel">
+                <option selected="selected" disabled="disabled">Country</option>
+                <option>Belarus</option>
+                <option>Russia</option>
+                <option>Ukraine</option>
+                <option>Molodova</option>
+              </select>
+              <i class="icons-arrow__gray"></i>
+            </div>
+            <br>
+            <input type="text" placeholder="First name" class="p-info__input mr-20">
+            <input type="text" placeholder="Second name" class="p-info__input">
+            <input type="text" placeholder="Adress" class="p-info__input p-info__input_large">
+            <input type="text" placeholder="Postal code" class="p-info__input mr-20">
+            <input type="text" placeholder="City" class="p-info__input">
+            <input type="email" placeholder="Email" class="p-info__input mr-20">
+            <input type="phone" placeholder="Phone" class="p-info__input">
+            <h3 class="p-info__title">Notes</h3>
+            <input type="text" placeholder="Note" class="p-info__input p-info__input_large">
+            <h3 class="p-info__title">Delivery mode</h3>
+            <div class="select-cont">
+              <select name="" id="" class="p-info__input p-info__input_sel">
+                <option><span class="delivery-location">Minsk, Belarus</span> <span class="delivery-price">$20</span></option>
+                <option><span class="delivery-location">Moscow, Russia</span> <span class="delivery-price">$10</span></option>
+                <option><span class="delivery-location">Kiev, Ukrain</span> <span class="delivery-price">$15</span></option>
+              </select>
+              <i class="icons-arrow__gray"></i>
+            </div>
+          </form>
+        </div>
+      </div>
+     
+      <form class="cart">
+        <table class="cart__table" cellspacing="0">
+          <thead>
+            <tr>
+                <th class="table__title">your cart</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- cart__item 111 -->
+            <tr class="cart__item">
+              <td class="cart__product-quantity">
+                <div class="quantity">
+                  <input type="button" value="+" class="quantity__button quantity__button_plus"> 
+                  <input class="quantity__button quantity__button_number" step="1" title="Qty" type="number" value="1">
+                  <input type="button" value="-" class="quantity__button quantity__button_minus">
+                </div>
+              </td>
+              <td class="cart__product-img-cont">
+                <a href="">
+                  <img class="cart__product-image" src="img/product_cover_Raf_main.png" alt="">
+                </a>
+              </td>
+              <td class="cart__product-name">
+                <h2 class="cart__pr-brand">Comme des Garçons Play</h3>
+                <span class="cart__pr-model">Rod Laver Vintage - exclusive</span>
+              </td>
+              <td class="cart__pr-size">
+                <h3 class="cart__size-title">Size</h3>
+                <div class="cart__size-quantity">7.5</div>
+              </td>
+              <td class="cart__pr-price">
+                $ 105.00
+              </td>
+            </tr>
+            <!-- cart__item 222 -->
+            <tr class="cart__item">
+              <td class="cart__product-quantity">
+                <div class="quantity">
+                  <input type="button" value="+" class="quantity__button quantity__button_plus">
+                  <input class="quantity__button quantity__button_number" step="1" title="Qty" type="number" value="1">
+                  <input type="button" value="-" class="quantity__button quantity__button_minus"> 
+                </div>
+              </td>
+              <td class="cart__product-image-cont">
+                <a href="">
+                  <img class="cart__product-image" src="img/product_cover_main_pink.png" alt="">
+                </a>
+              </td>
+              <td class="cart__product-name">
+                <h2 class="cart__pr-brand">Nike</h3>
+                <span class="cart__pr-model">Air Max Tavas SD</span>
+              </td>
+              <td class="cart__pr-size">
+                <h3 class="cart__size-title">Size</h3>
+                <div class="cart__size-quantity">7.5</div>
+              </td>
+              <td class="cart__pr-price">
+                $ 160.00
+              </td>
+            </tr>
+            <tr class="cart__item-total">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="item-total__title">Shipping</td>
+              <td class="item-total__price">$ 20.00</td>
+            </tr>
+            <tr class="cart__item-total">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="item-total__title">Subtotal</td>
+              <td class="item-total__price">$ 285.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="cart__terms-block">
+          <input id="checkbox" type="checkbox" class="cart__check">
+          <label for="checkbox"" class="cart__terms">
+          I agree <a href="" class="cart-terms__link">terms of use and privacy</a>
+          </label>
+          <button class="cart__submit" type="submit">Confirm</button>
+        </div>
+      </form>
+      
+    </section>
     
     <!-- section product-cover -->
    
@@ -461,14 +589,8 @@
 
             </div>
           </div>
-        </section>
-      
-
-      
-
-      
-        
-      
+        </section>     
+  
         <section class="footer__bottom f-bot">
           <div class="row">
             <div class="col-md-12">
@@ -480,14 +602,15 @@
               
             </div>
           </div>
-        </section>
-      
+        </section>     
 
-     
-    </footer>
+      </footer>
      </div>
 
+    <div class="site-cache js-closeCart"></div>
   </div>
+</div>
+  
 
   <!-- Plugins -->
   <div class="popup"></div>
