@@ -50,10 +50,9 @@
 
 
     <!-- header -->
-		
-
+	
 		<div class="container-fluid">
-      <header class="header">
+      <header class="header header__search">
         <div class="row">
           <div class="col-md-1 col-sm-1 col-xs-12">
 
@@ -74,13 +73,13 @@
                 <span class="burger__item"></span>
               </div>
             </div>
-
+            
             <!-- navigation -->
             <nav class="header__navig js-navigation">
               <ul class="navig">
-                <li class="navig__item"><a class="navig__link" href="index.html">home</a></li>
-                <li class="navig__item"><a class="navig__link" href="footwear.html">footwear</a></li>
-                <li class="navig__item"><a class="navig__link navig__link_active" href="#">clothing</a></li>
+              <li class="navig__item"><a class="navig__link" href="index.html">home</a></li>
+                <li class="navig__item"><a class="navig__link navig__link_active" href="#">footwear</a></li>
+                <li class="navig__item"><a class="navig__link" href="product_cover.html">clothing</a></li>
                 <li class="navig__item"><a class="navig__link" href="#">accessories</a></li>
                 <li class="navig__item"><a class="navig__link" href="#">brands</a></li>
                 <li class="navig__item"><a class="navig__link" href="#">exclusive</a></li>
@@ -106,9 +105,9 @@
 
     <!-- PAYMENT  -->
 
-		<section class="payment-section">
+    <section class="payment-section">
       <div class="payment">
-        <a href="#" class="payment__close js-closeCart"><i class="fa fa-times" aria-hidden="true"></i></a>
+      <a href="#" class="payment__close js-closeCart"><i class="fa fa-times" aria-hidden="true"></i></a>
         <h2 class="payment__title">Informations</h2>
         <div class="payment__pers-info p-info">
           <h3 class="p-info__title">Personnal informations</h3>
@@ -232,307 +231,307 @@
       </form>
       
     </section>
-    
-    <!-- section product-cover -->
-   
-      
-    <div class="container-fluid">
-      <section class="product-cover js-slideShowCont">
-        <div class="row">
-         
-          <div class="col-md-1 col-sm-1 col-xs-1">
 
-            <!-- product-cover__bar -->
-            <div class="product-cover__bar pr-bar">
-              <figure class="pr-bar__item js-slideshowItem">
-                <a href="#" class="pr-bar__link js-slideshowLink">
-                  <img class="pr-bar__img" src="img/product_cover_main_pink.png" alt="">
-                </a>
-              </figure>
-              <figure class="pr-bar__item js-slideshowItem">
-                <a href="#" class="pr-bar__link js-slideshowLink">
-                  <img class="pr-bar__img" src="img/product_cover_nike_side.png" alt="">
-                </a>
-              </figure>
-              <figure class="pr-bar__item js-slideshowItem">
-                <a href="#" class="pr-bar__link js-slideshowLink">
-                  <img class="pr-bar__img" src="img/product_cover_nike_face.png" alt="">
-                </a>
-              </figure>
-              <figure class="pr-bar__item js-slideshowItem">
-                <a href="#" class="pr-bar__link js-slideshowLink">
-                  <img class="pr-bar__img" src="img/product_cover_nike_back.png" alt="">
-                </a>
-              </figure>
+    <div class="container-fluid">
+      
+      <section class="footwear-section">
+        
+        <div class="row">
+          <div class="col-md-12">
+            
+            <!-- footwear-section__title -->
+            <div class="footwear-section__intro">
+              <h1 class="ft-title">footwear</h1>
+              <span class="ft-quantity">689 shoes </span>
+              <form action="" class="footwear-section__form">
+                <div class="select-cont select-cont_footwear">
+                  <select name="" id="" class="ft-filter">
+                    <option value="">Most popular</option>
+                    <option value="">New</option>
+                    <option value="">On sale</option>
+                  </select>
+                  <i class="icons-arrow"></i>
+                </div>
+              </form>
             </div>
 
           </div>
-          
-          <div class="col-md-7 col-sm-11 col-xs-10">
-            
-            <!-- product-cover__image -->
-            <figure class="product-cover__image-cont js-slideshowDisplay">
-              <img src="img/product_cover_main_pink.png" class="img-responsive product-cover__image" alt="#">
-            </figure>
-
-          </div>
-      
-          <div class="col-md-4 col-sm-12 col-xs-12">
-            
-            <!-- product-cover__description -->
-            <article class="product-cover__description product-bar">
-              <div class="pr-name product-bar__name">
-                <h2 class="pr-name__brand">Nike</h2>
-                <h1 class="pr-name__title">AIR MAX TAVAS SD</h1>
-                <span class="pr-name__price">$  160.00</span>
-              </div>
-              <div class="product-bar__preview">
-                <ul class="preview-colors">
-                  <li class="preview-colors__item">colors - </li>
-                  <li class="preview-colors__item"><a class="preview-colors__link" href="#">black</a>/</li>
-                  <li class="preview-colors__item"><a class="preview-colors__link" href="#">Pink Pow</a>/</li>
-                  <li class="preview-colors__item"><a class="preview-colors__link" href="#">Tour Yellow</a>/</li>
-                  <li class="preview-colors__item"><a class="preview-colors__link" href="#">White</a></li>
-                </ul>
-                <figure class="preview-image js-slideshowItem">
-                  <a class="js-slideshowLink" href="#">
-                    <img class="preview-image__item" src="img/product_cover_main_pink.png" alt="">
-                  </a>
-                </figure>
-                <figure class="preview-image js-slideshowItem">
-                  <a class="js-slideshowLink" href="#">
-                    <img class="preview-image__item" src="img/product_cover_main_blue.png" alt="">
-                  </a>
-                </figure>
-              </div>
-              <div class="size product-bar__size">
-                <p class="size__name">Size charts</p>
-                <ul class="size__buttn buttn JsSize">
-                  <li class="buttn__item">
-                    <a href="#" class="buttn__link buttn__link_white">size<i class="icons-arrow"></i></a>
-                    <ul class="dropMe">
-                      <li><a href="#">40</a></li>
-                      <li><a href="#">41</a></li>
-                      <li><a href="#">42</a></li>
-                      <li><a href="#">43</a></li>
-                      <li><a href="#">44</a></li>
-                      <li><a href="#">45</a></li>
-                    </ul>
-                  </li>
-                  <li class="buttn__item">
-                    <a href="#" class="buttn__link buttn__link_gray">add to cart</a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </div>
         </div>
-      </section>
-    </div>
-    
-
-    <!-- section product-cover 222 -->
-    
-      
-    <div class="container-fluid">
-      <section class="product-cover js-slideShowCont">
         <div class="row">
-          <div class="col-md-1 col-sm-1 col-xs-1">
+          <div class="col-md-3">
 
-            <!-- product-cover__bar -->
-            <div class="product-cover__bar pr-bar">
-              <figure class="pr-bar__item js-slideshowItem">
-                <a href="#" class="pr-bar__link js-slideshowLink">
-                  <img class="pr-bar__img" src="img/product_cover_Raf_side.png" alt="">
+            <!-- footwear-section__block -->
+            <div class="footwear-section__block fw-block">
+              <figure class="fw-block__img-cont">
+                <a href="" class="fw-block__link">
+                  <img src="img/footwear__nike.png" alt="" class="fw-block__img">
                 </a>
               </figure>
-              <figure class="pr-bar__item js-slideshowItem">
-                <a href="#" class="pr-bar__link js-slideshowLink">
-                  <img class="pr-bar__img" src="img/product_cover_Raf_top-side.png" alt="">
-                </a>
-              </figure>
-              <figure class="pr-bar__item js-slideshowItem">
-                <a href="#" class="pr-bar__link js-slideshowLink">
-                  <img class="pr-bar__img" src="img/product_cover_Raf_right-side.png" alt="">
-                </a>
-              </figure>
-              <figure class="pr-bar__item js-slideshowItem">
-                <a href="#" class="pr-bar__link js-slideshowLink">
-                  <img class="pr-bar__img" src="img/product_cover_Raf_back-side.png" alt="">
-                </a>
-              </figure>
+              <div class="fw-block__description fw-description">
+                <h2 class="fw-description__brand">Supreme x Nike SB</h2>
+                <span class="fw-description__features">Tennis Classic</span>
+                <span class="fw-description__price">$120.00</span>
+                <del class="fw-description__old-price">$160.00</del>
+              </div> 
             </div>
 
           </div>
-          
-          <div class="col-md-7 col-sm-11 col-xs-10">
-            
-            <!-- product-cover__image -->
-            <figure class="product-cover__image-cont js-slideshowDisplay">
-              <img src="img/product_cover_Raf_main.png" class="img-responsive product-cover__image" alt="#">
-            </figure>
+          <div class="col-md-6">
 
-          </div>
-      
-          <div class="col-md-4 col-sm-12 col-xs-12">
-            
-            <!-- product-cover__description -->
-            <article class="product-cover__description product-bar">
-              <div class="pr-name product-bar__name">
-                <h2 class="pr-name__brand">Raf simons</h2>
-                <h1 class="pr-name__title">hi-top velcro straps</h1>
-                <span class="pr-name__price">$  788.00</span>
+            <!-- footwear-section__block center__block-->
+            <div class="footwear-section__block fw-block">
+              <div class="fw-block__action-bar action-bar action-bar_cb">             
+                <div class="action-bar__label action-bar__label_green">news</div>
               </div>
-              <div class="product-bar__description pr-desc">
-                <span class="pr-desc__s-title">description</span>
-                <p class="pr-desc__text">Black leather hi-top velcro straps sneakers from Raf Simons. Item ID: 11218333</p>
-                <ul class="pr-desc__bullet bullet">
-                  <li class="bullet__item"><i class="icons-bullet__dot"></i>100% Leather</li>
-                  <li class="bullet__item"><i class="icons-bullet__dot"></i>Made in Italia</li>
-                </ul>
-              </div>
-              <div class="product-bar__preview">
-                <ul class="preview-colors">
-                  <li class="preview-colors__item">colors - </li>
-                  <li class="preview-colors__item"><a class="preview-colors__link" href="#">black</a></li>
-                </ul>
-                <figure class="preview-image js-slideshowItem">
-                  <a class="js-slideshowLink" href="#">
-                    <img class="preview-image__item" src="img/product_cover_Raf_main.png" alt="">
-                  </a>
-                </figure>
-                <figure class="preview-image js-slideshowItem">
-                  <a class="js-slideshowLink" href="#">
-                    <img class="preview-image__item" src="img/product_cover_Raf_main_pink.png" alt="">
-                  </a>
-                </figure>
-              </div>
-              <div class="size product-bar__size">
-                <p class="size__name">Size charts</p>
-                <ul class="size__buttn buttn JsSize">
-                  <li class="buttn__item">
-                    <a href="#" class="buttn__link buttn__link_white">size<i class="icons-arrow"></i></a>
-                    <ul class="dropMe">
-                      <li><a href="#">40</a></li>
-                      <li><a href="#">41</a></li>
-                      <li><a href="#">42</a></li>
-                      <li><a href="#">43</a></li>
-                      <li><a href="#">44</a></li>
-                      <li><a href="#">45</a></li>
-                    </ul>
-                  </li>
-                  <li class="buttn__item">
-                    <a href="#" class="buttn__link buttn__link_gray">add to cart</a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-    </div>
-    
-
-    <!-- section product-cover 333 -->
-    
-      
-    <div class="container-fluid">
-      <section class="product-cover js-slideShowCont">
-        <div class="row">
-          <div class="col-md-1 col-sm-1 col-xs-1">
-
-            <!-- product-cover__bar -->
-            <div class="product-cover__bar pr-bar">
-              <figure class="pr-bar__item js-slideshowItem">
-                <a href="#" class="pr-bar__link js-slideshowLink">
-                  <img class="pr-bar__img pr-bar__img_cloth" src="img/product_cover_hoodie_full-fornt.png" alt="">
+              <figure class="fw-block__img-cont">
+                <a href="" class="fw-block__link">
+                  <img src="img/footwear__RAF-SIMONS-X-ADDIDAS.png" alt="" class="fw-block__img fw-block__img_large">
                 </a>
               </figure>
-              <figure class="pr-bar__item js-slideshowItem">
-                <a href="#" class="pr-bar__link js-slideshowLink">
-                  <img class="pr-bar__img pr-bar__img_cloth" src="img/product_cover_hoodie_front.png" alt="">
-                </a>
-              </figure>
-              <figure class="pr-bar__item pr-bar__item_cloth js-slideshowItem">
-                <a href="#" class="pr-bar__link js-slideshowLink">
-                  <img class="pr-bar__img pr-bar__img_cloth " src="img/product_cover_hoodie_back.png" alt="">
-                </a>
-              </figure>
-              <figure class="pr-bar__item pr-bar__item_cloth js-slideshowItem">
-                <a href="#" class="pr-bar__link js-slideshowLink">
-                  <img class="pr-bar__img pr-bar__img_cloth " src="img/product_cover_hoodie_main_2.png" alt="">
-                </a>
-              </figure>
+              <div class="fw-block__description fw-description">
+                <h2 class="fw-description__brand">Raf Simons x adidas</h2>
+                <span class="fw-description__features">Mid - Platform Light-Up</span>
+                <span class="fw-description__price">$760.00</span>
+              </div> 
             </div>
 
           </div>
-          
-          <div class="col-md-7 col-sm-11 col-xs-10">
+          <div class="col-md-3">
             
-            <!-- product-cover__image -->
-            <figure class="product-cover__image-cont js-slideshowDisplay">
-              <img src="img/product_cover_hoodie_main_2.png" class="img-responsive product-cover__image product-cover__image_cloth" alt="#">
-            </figure>
+            <!-- footwear-section__block -->
+            <div class="footwear-section__block fw-block">
+              <figure class="fw-block__img-cont">
+                <a href="" class="fw-block__link">
+                  <img src="img/footwear__KRIS-VAN-ASSCHE.png" alt="" class="fw-block__img">
+                </a>
+              </figure>
+              <div class="fw-block__description fw-description">
+                <h2 class="fw-description__brand">Kris van assche</h2>
+                <span class="fw-description__features">Hi top - Multi laces</span>
+                <span class="fw-description__price">$650.00</span>
+                <del class="fw-description__old-price">$750.00</del>
+              </div> 
+            </div>
 
           </div>
-      
-          <div class="col-md-4 col-sm-12 col-xs-12">
+        </div>
+
+      </section>
+
+      <section class="footwear-section">
+        <div class="row">
+          <div class="col-md-6">
+
+            <!-- footwear-section__block left__block-->
+            <div class="footwear-section__block fw-left-block">
+              <figure class="left-block__img-cont">
+                <a href="" class="fw-block__link">
+                  <img src="img/footwear__nike-x-supreme.png" alt="" class="left-block__img">
+                </a>
+              </figure>
+              <div class="left-block__description lb-description">
+                <div class="fw-block__action-bar action-bar action-bar_lb">             
+                  <div class="action-bar__label action-bar__label_green">news</div>
+                </div>
+                <h2 class="lb-description__brand">Nike x Supreme</h2>
+                <span class="lb-description__features">Air force one</span>
+                <p class="lb-description__text">Sneakers from Nike Sportswear. Made in collaboration with Acronym. Upper in suede. Flat laces. Outer side zip closure. Tongue in leather with perforation. </p>
+                <span class="lb-description__price">$300.00</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3">
             
-            <!-- product-cover__description -->
-            <article class="product-cover__description product-bar">
-              <div class="pr-name product-bar__name">
-                <h2 class="pr-name__type-of-cloth">Undercover</h2>
-                <h1 class="pr-name__title">Marquee moon hooded sweatshirt black</h1>
-                <span class="pr-name__price">$  600.00</span>
+            <!-- footwear-section__block -->
+            <div class="footwear-section__block fw-block">
+              <div class="fw-block__action-bar action-bar">             
+                <div class="action-bar__label action-bar__label_blue">Exclusive</div>
               </div>
-              <div class="product-bar__description pr-desc">
-                <span class="pr-desc__s-title">description</span>
-                <p class="pr-desc__text">Sweatshirt from Undercover. Crafted from cotton jersey. Hood with drawstrings. Ribbed cuffs and hem. Contrasting prints on the front, back and on the hood. Slanted side pockets.</p>
-                <ul class="pr-desc__bullet bullet">
-                  <li class="bullet__item"><i class="icons-bullet__dot"></i>Black</li>
-                  <li class="bullet__item"><i class="icons-bullet__dot"></i>100% Cotton</li>
-                  <li class="bullet__item"><i class="icons-bullet__dot"></i>Made in Japan</li>
-                  <li class="bullet__item"><i class="icons-bullet__dot"></i>Model is 188 cm and wears size 3</li>
-                </ul>
+              <figure class="fw-block__img-cont">
+                <a href="" class="fw-block__link">
+                  <img src="img/footwear__converse-1.png" alt="" class="fw-block__img">
+                </a>
+              </figure>
+              <div class="fw-block__description fw-description">
+                <h2 class="fw-description__brand">Converse x Comme des Garçons</h2>
+                <span class="fw-description__features">Black Heart Logo</span>
+                <span class="fw-description__price">$160.00</span>
+                <del class="fw-description__old-price">$200.00</del>
+              </div> 
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            
+            <!-- footwear-section__block -->
+            <div class="footwear-section__block fw-block">
+              <div class="fw-block__action-bar action-bar">
+                <i class="fa fa-heart action-bar__like" aria-hidden="true"></i>
+                <div class="action-bar__label action-bar__label_blue">Exclusive</div>
+                <i class="fa fa-shopping-cart action-bar__cart" aria-hidden="true"></i>
               </div>
-              <div class="size product-bar__size">
-                <p class="size__name">Size charts</p>
-                <ul class="size__buttn buttn JsSize">
-                  <li class="buttn__item">
-                    <a href="#" class="buttn__link buttn__link_white">size<i class="icons-arrow"></i></a>
-                    <ul class="dropMe">
-                      <li><a href="#">40</a></li>
-                      <li><a href="#">41</a></li>
-                      <li><a href="#">42</a></li>
-                      <li><a href="#">43</a></li>
-                      <li><a href="#">44</a></li>
-                      <li><a href="#">45</a></li>
-                    </ul>
-                  </li>
-                  <li class="buttn__item">
-                    <a href="#" class="buttn__link buttn__link_gray">add to cart</a>
-                  </li>
-                </ul>
-              </div>
-            </article>
+              <figure class="fw-block__img-cont">
+                <a href="" class="fw-block__link">
+                 <img src="img/footwear__converse-2.png" alt="" class="fw-block__img">
+                </a>
+              </figure>
+              <div class="fw-block__description fw-description">
+                <h2 class="fw-description__brand">Converse x Comme des Garçons</h2>
+                <span class="fw-description__features">Black Heart Logo</span>
+                <span class="fw-description__price">$105.00</span>
+              </div> 
+            </div>
+
           </div>
         </div>
       </section>
+
+      <section class="footwear-section">
+        
+        <div class="row">
+          <div class="col-md-3">
+
+             <!-- footwear-section__block 111 -->
+            <div class="footwear-section__block fw-block">
+              <figure class="fw-block__img-cont">
+                <a href="" class="fw-block__link">
+                  <img src="img/footwear__nike-jordan.png" alt="" class="fw-block__img">
+                </a>
+              </figure>
+              <div class="fw-block__description fw-description">
+                <h2 class="fw-description__brand">Nike jordan</h2>
+                <span class="fw-description__features">Air jordan XI Low</span>
+                <span class="fw-description__price">$200.00</span>
+              </div> 
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            
+             <!-- footwear-section__block 222 -->
+            <div class="footwear-section__block fw-block">
+              <figure class="fw-block__img-cont">
+                <a href="" class="fw-block__link">
+                  <img src="img/footwear__acne-studios.png" alt="" class="fw-block__img">
+                </a>
+              </figure>
+              <div class="fw-block__description fw-description">
+                <h2 class="fw-description__brand">Acne Studios</h2>
+                <span class="fw-description__features">Adrian - Grained Leather</span>
+                <span class="fw-description__price">$370.00</span>
+              </div> 
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            
+             <!-- footwear-section__block 333 -->
+            <div class="footwear-section__block fw-block">
+              <figure class="fw-block__img-cont">
+                <a href="" class="fw-block__link">
+                  <img src="img/footwear__addidas-rick_owens.png" alt="" class="fw-block__img">
+                </a>
+              </figure>
+              <div class="fw-block__description fw-description">
+                <h2 class="fw-description__brand">Rick owens x Adidas</h2>
+                <span class="fw-description__features">Black & Milk</span>
+                <span class="fw-description__price">$380.00</span>
+              </div> 
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            
+            <!-- footwear-section__block 444 -->
+            <div class="footwear-section__block fw-block">
+              <figure class="fw-block__img-cont">
+                <a href="" class="fw-block__link">
+                  <img src="img/footwear__addidas.png" alt="" class="fw-block__img">
+                </a>
+              </figure>
+              <div class="fw-block__description fw-description">
+                <h2 class="fw-description__brand">Adidas</h2>
+                <span class="fw-description__features">Yeezy boost 350</span>
+                <span class="fw-description__price">$560.00</span>
+                <del class="fw-description__old-price">$940.00</del>
+              </div> 
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="footwear-section">
+        
+        <div class="row">
+          <div class="col-md-3">
+
+            <!-- footwear-section__block -->
+            <div class="footwear-section__block fw-block">
+              <figure class="fw-block__img-cont">
+                <a href="" class="fw-block__link">
+                  <img src="img/footwear__common.png" alt="" class="fw-block__img">
+                </a>
+              </figure>
+              <div class="fw-block__description fw-description">
+                <h2 class="fw-description__brand">Common Projects</h2>
+                <span class="fw-description__features">Red Canvas & Leather </span>
+                <span class="fw-description__price">$410.00</span>
+              </div> 
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            
+            <!-- footwear-section__block brand-block -->
+            <div class="footwear-section__block fw-block fw-block__brand">
+              <div class="brand-block__text">
+                <span class="brand-block__name">New arrivals</span>
+                <h2 class="brand-block__title">OG ERA LX WTAPS</h2>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            
+            <!-- footwear-section__block left__block-->
+            <div class="footwear-section__block fw-left-block">
+              <figure class="left-block__img-cont">
+                <a href="" class="fw-block__link">
+                  <img src="img/footwear__nike-red.png" alt="" class="left-block__img">
+                </a>
+              </figure>
+              <div class="left-block__description lb-description">
+                <div class="fw-block__action-bar action-bar action-bar_lb">             
+                  <div class="action-bar__label action-bar__label_green">news</div>
+                </div>
+                <h2 class="lb-description__brand">Nike</h2>
+                <span class="lb-description__features">Lunar force 1 sp acronym white</span>
+                <p class="lb-description__text">Sneakers from Nike Sportswear. Made in collaboration with Acronym. Upper in suede. Flat laces. Outer side zip closure. Tongue in leather with perforation.</p>
+                <span class="lb-description__price">$300.00</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
     </div>
     
 
     <!-- footer -->
     <div class="container-fluid">
-    <footer class="footer">
-        
-      
 
+		  <footer class="footer">
+        
         <section class="footer__top f-top">
+              
           <div class="row">
             <div class="col-md-1 col-sm-1 hidden-xs">
 
               <!-- logo -->
-              <a href="" class="f-top__logo">
+              <a href="" class="f-top_logo">
                 <img src="img/logo_icon.jpg" alt="">
               </a>
               
@@ -590,40 +589,43 @@
 
             </div>
           </div>
-        </section>     
-  
-        <section class="footer__bottom f-bot">
-          <div class="row">
-            <div class="col-md-12">
+       
+        </section>
 
-              <!-- copyright -->
-              <small class="f-bot__copyright">
-                Copyright © 2015 <a class="copyright__link" href="">Bree Orthonormai</a>. All rights reserved.
-              </small>
-              
+        <section class="footer__bottom f-bot">
+               
+            <div class="row">
+              <div class="col-md-12">
+
+                <!-- copyright -->
+                <small class="f-bot__copyright">
+                  Copyright © 2015 <a class="copyright__link" href="">Bree Orthonormai</a>. All rights reserved.
+                </small>
+                
+              </div>
             </div>
-          </div>
-        </section>     
+      
+        </section>
 
       </footer>
-     </div>
 
+		</div>
+		
     <div class="site-cache js-closeCart"></div>
-  </div>
+	</div>
 </div>
-  
 
-  <!-- Plugins -->
-  <div class="popup"></div>
+	<!-- Plugins -->
+	<div class="popup"></div>
 
 
-  <script type="text/javascript" src="js/libs/jquery-2.1.4.js"></script>
-  <script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+ 	<script type="text/javascript" src="js/libs/jquery-2.1.4.js"></script>
+ 	<script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/libs/owl.carousel.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
-  
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+	
+	  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

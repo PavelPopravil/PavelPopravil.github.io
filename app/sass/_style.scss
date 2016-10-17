@@ -13,7 +13,7 @@ $blue-color: #0089cf;
 $white-color: #ffffff;
 $gray-color: #333333;
 $light_gray-color: #666666;
-$bg-color:#e6edf1;
+$bg-color:#c8cfdc;
 $input-color: #ccc;
 
 
@@ -883,6 +883,7 @@ ul.dropMe {
 .pr-block__img-cont {}
 .pr-block__img {
     position: absolute; left: 0; top: 0; right: 0; bottom: 15%; margin: auto; max-height: 200px;
+    max-width: 230px;
     @include respond-to(lg) {max-width: 190px;}
 }
 .pr-block__description {}
@@ -897,6 +898,153 @@ ul.dropMe {
     @include font-type($light_gray-color, $second-font, 14px, 25px, 0.4px);
 }
 .bl-description__price {
-    display: block;
+    display: inline-block;
     @extend .bl-description__brand;
 }
+
+                // FOOTWEAR PAGE
+.footwear-section {
+    padding: 30px 50px 0px;
+    @include respond-to(xs) {padding: 20px 20px 0px;} 
+    &:last-child {
+        padding-bottom: 30px;
+        @include respond-to(xs) {padding-bottom: 20px;}
+    }
+}
+
+// moduls
+
+// footwear-section__title
+.footwear-section__intro {
+    text-align: center; margin: 0 auto 40px;
+    position: relative;
+}
+.ft-title {
+    @include font-type($gray-color, $main-font, 45px, 50px, 0.4px); text-transform: uppercase;
+}
+.ft-quantity {
+    @include font-type($blue-color, $main-font, 14px, 25px, 0.4px);
+}
+
+// filter 
+.footwear-section__form {
+    position: absolute; bottom: 2%; right: 0;
+}
+.ft-filter {
+    @extend .p-info__input_sel;
+    @include font-type($gray-color, $main-font, 14px, 25px, 0.4px); text-transform: uppercase;
+    border: none;
+}
+.select-cont_footwear {
+    width: 110px;
+}
+
+// footwear-section__block
+.footwear-section__block {}
+.fw-block {
+    @extend .pr-block;
+}
+
+.fw-block__img-cont {}
+.fw-block__img {
+    @extend .pr-block__img;
+}
+.fw-block__img_large {
+    max-width: 100%;
+    left: 5%;
+}
+
+.fw-block__description {}
+
+.fw-description {
+    @extend .bl-description;
+}
+.fw-description__brand {
+    @extend .bl-description__brand;
+}
+
+.fw-description__features {
+    @extend .bl-description__features;
+}
+
+.fw-description__price {
+    @extend .bl-description__price;
+}
+.fw-description__old-price {
+    @extend .bl-description__price; color: red; margin-left: 5px;
+}
+// left-block
+.fw-left-block {
+    @extend .pr-block;
+    text-align: left; padding: 40px;
+}
+.left-block__img {
+   float: left; 
+   position: absolute; top: 0; right: 50%; left: 0; bottom: 0; margin: auto;
+}
+.left-block__description {
+    position: absolute; top: 34%; right: 0; left: 48%; bottom: 0; margin: auto; margin-right: 40px;
+}
+.lb-description__brand {
+    @extend .bl-description__brand;
+}
+.lb-description__features {
+    @extend .bl-description__features;
+    margin-bottom: 1px;
+}
+.lb-description__text {
+    @extend .bullet__item;
+    line-height: 21px; margin-bottom: 20px;
+}
+.lb-description__price {
+    @extend .bl-description__price;
+}
+
+// brand-block
+.fw-block__brand {
+    background: url(../img/footwear__new-arrivals_theme.png) no-repeat 50% 50%;
+    background-size: cover;
+
+}
+.brand-block__text {
+    position: absolute; top: 10%; right: 0; bottom: 0; left: 0; margin: auto;
+}
+.brand-block__name {
+    @include font-type($white-color, $main-font, 14px, 25px, 0.4px); 
+}
+.brand-block__title {
+    @include font-type($white-color, $main-font, 55px, 50px, 4px); text-transform: uppercase;
+    margin-top: 20px;
+}
+// action-bar
+
+.action-bar {
+    position: absolute; left: 13%; top: 12%;
+    width: 70%; 
+
+    &_cb {
+        top: 8%;
+    }
+    &_lb {
+        left: 0; top: -34%;
+    }
+}
+.action-bar__like, .action-bar__cart {
+    cursor: pointer; font-size: 20px; color: #a0a0a0;
+    &:hover {
+        color: $blue-color;
+    }
+}
+.action-bar__like {float: left;}
+.action-bar__label {
+    @include font-type($white-color, $main-font, 14px, 14px, 0.4px); text-transform: uppercase;
+    padding: 5px 15px; display: inline-block;
+     @include border-radius(45%);
+     &_blue {
+        background-color: $blue-color;
+     } 
+     &_green {
+        background-color: #83d78c;
+     }
+}
+.action-bar__cart {float: right;}

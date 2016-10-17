@@ -156,7 +156,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     src: url("../fonts/DINNextLTProMediumCond/DINNextLTProMediumCond.svg#DINNextLTProMediumCond") format("svg");
   }
 }
-/* line 67, ../sass/_settings.scss */
+/* line 66, ../sass/_settings.scss */
 html {
   /* height hack */
   min-height: 100%;
@@ -164,7 +164,7 @@ html {
   height: 100%;
 }
 
-/* line 74, ../sass/_settings.scss */
+/* line 73, ../sass/_settings.scss */
 body {
   /* height hack */
   min-height: 100%;
@@ -175,35 +175,35 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-/* line 87, ../sass/_settings.scss */
+/* line 86, ../sass/_settings.scss */
 body.onload {
   overflow: hidden;
 }
 
-/* line 88, ../sass/_settings.scss */
+/* line 87, ../sass/_settings.scss */
 button, select {
   -webkit-appearance: none;
 }
 
 /* SELECT TEXT */
-/* line 91, ../sass/_settings.scss */
+/* line 90, ../sass/_settings.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 96, ../sass/_settings.scss */
+/* line 95, ../sass/_settings.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 105, ../sass/_settings.scss */
+/* line 104, ../sass/_settings.scss */
 a {
   text-decoration: underline;
 }
 
-/* line 112, ../sass/_settings.scss */
+/* line 111, ../sass/_settings.scss */
 audio,
 canvas,
 img,
@@ -211,68 +211,68 @@ video {
   vertical-align: middle;
 }
 
-/* line 119, ../sass/_settings.scss */
+/* line 118, ../sass/_settings.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 125, ../sass/_settings.scss */
+/* line 124, ../sass/_settings.scss */
 textarea {
   resize: vertical;
 }
 
 /* System */
-/* line 131, ../sass/_settings.scss */
+/* line 130, ../sass/_settings.scss */
 .np {
   padding: 0;
 }
 
 /* no padding */
-/* line 132, ../sass/_settings.scss */
+/* line 131, ../sass/_settings.scss */
 .np-l {
   padding-left: 0;
 }
 
 /* no padding left */
-/* line 133, ../sass/_settings.scss */
+/* line 132, ../sass/_settings.scss */
 .np-r {
   padding-right: 0;
 }
 
 /* no padding right */
-/* line 134, ../sass/_settings.scss */
+/* line 133, ../sass/_settings.scss */
 .dp {
   padding: 0 30px;
 }
 
 /* double padding */
-/* line 135, ../sass/_settings.scss */
+/* line 134, ../sass/_settings.scss */
 .nm {
   margin: 0;
 }
 
 /* no margin */
-/* line 136, ../sass/_settings.scss */
+/* line 135, ../sass/_settings.scss */
 .nm-b {
   margin-bottom: 0;
 }
 
 /* no margin bottom */
-/* line 137, ../sass/_settings.scss */
+/* line 136, ../sass/_settings.scss */
 .p_small {
   padding: 5px;
 }
 
 /* BASE RESET */
-/* line 140, ../sass/_settings.scss */
+/* line 139, ../sass/_settings.scss */
 .navbar-default .navbar-toggle {
   border: none;
 }
 
 /* HAPPY BROWSER */
-/* line 143, ../sass/_settings.scss */
+/* line 142, ../sass/_settings.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -300,7 +300,7 @@ a:hover {
 /* line 36, ../sass/_style.scss */
 .app {
   min-width: 320px;
-  background-color: #e6edf1;
+  background-color: #c8cfdc;
 }
 
 /* line 37, ../sass/_style.scss */
@@ -827,7 +827,7 @@ a:hover {
 }
 
 /* line 302, ../sass/_style.scss */
-.p-info__input_sel {
+.p-info__input_sel, .ft-filter {
   background-color: transparent;
   width: 100%;
   text-overflow: ┬╗;
@@ -1986,7 +1986,7 @@ ul.dropMe li a {
 }
 
 /* line 814, ../sass/_style.scss */
-.bullet__item {
+.bullet__item, .lb-description__text {
   color: #a0a0a0;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
@@ -2141,7 +2141,7 @@ ul.dropMe li a {
 }
 
 /* line 878, ../sass/_style.scss */
-.pr-block {
+.pr-block, .fw-block, .fw-left-block {
   background-color: #fff;
   text-align: center;
   height: 430px;
@@ -2149,13 +2149,13 @@ ul.dropMe li a {
 }
 @media only screen and (max-width: 481px) {
   /* line 878, ../sass/_style.scss */
-  .pr-block {
+  .pr-block, .fw-block, .fw-left-block {
     height: 360px;
   }
 }
 
 /* line 884, ../sass/_style.scss */
-.pr-block__img {
+.pr-block__img, .fw-block__img {
   position: absolute;
   left: 0;
   top: 0;
@@ -2163,16 +2163,17 @@ ul.dropMe li a {
   bottom: 15%;
   margin: auto;
   max-height: 200px;
+  max-width: 230px;
 }
 @media only screen and (max-width: 1199px) {
   /* line 884, ../sass/_style.scss */
-  .pr-block__img {
+  .pr-block__img, .fw-block__img {
     max-width: 190px;
   }
 }
 
-/* line 889, ../sass/_style.scss */
-.bl-description {
+/* line 890, ../sass/_style.scss */
+.bl-description, .fw-description {
   position: absolute;
   left: 0;
   top: 69%;
@@ -2181,8 +2182,8 @@ ul.dropMe li a {
   margin: auto;
 }
 
-/* line 892, ../sass/_style.scss */
-.bl-description__brand, .bl-description__price {
+/* line 893, ../sass/_style.scss */
+.bl-description__brand, .bl-description__price, .fw-description__price, .fw-description__old-price, .lb-description__price, .fw-description__brand, .lb-description__brand {
   color: #333333;
   font-family: "DINNextLTProMediumCond", sans-serif;
   font-size: 18px;
@@ -2191,8 +2192,8 @@ ul.dropMe li a {
   text-transform: uppercase;
 }
 
-/* line 895, ../sass/_style.scss */
-.bl-description__features {
+/* line 896, ../sass/_style.scss */
+.bl-description__features, .fw-description__features, .lb-description__features {
   display: block;
   margin-bottom: 16px;
   color: #666666;
@@ -2202,7 +2203,225 @@ ul.dropMe li a {
   letter-spacing: 0.4px;
 }
 
-/* line 899, ../sass/_style.scss */
-.bl-description__price {
-  display: block;
+/* line 900, ../sass/_style.scss */
+.bl-description__price, .fw-description__price, .fw-description__old-price, .lb-description__price {
+  display: inline-block;
+}
+
+/* line 906, ../sass/_style.scss */
+.footwear-section {
+  padding: 30px 50px 0px;
+}
+@media only screen and (max-width: 481px) {
+  /* line 906, ../sass/_style.scss */
+  .footwear-section {
+    padding: 20px 20px 0px;
+  }
+}
+/* line 909, ../sass/_style.scss */
+.footwear-section:last-child {
+  padding-bottom: 30px;
+}
+@media only screen and (max-width: 481px) {
+  /* line 909, ../sass/_style.scss */
+  .footwear-section:last-child {
+    padding-bottom: 20px;
+  }
+}
+
+/* line 918, ../sass/_style.scss */
+.footwear-section__intro {
+  text-align: center;
+  margin: 0 auto 40px;
+  position: relative;
+}
+
+/* line 922, ../sass/_style.scss */
+.ft-title {
+  color: #333333;
+  font-family: "DINNextLTProMediumCond", sans-serif;
+  font-size: 45px;
+  line-height: 50px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+/* line 925, ../sass/_style.scss */
+.ft-quantity {
+  color: #0089cf;
+  font-family: "DINNextLTProMediumCond", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.4px;
+}
+
+/* line 930, ../sass/_style.scss */
+.footwear-section__form {
+  position: absolute;
+  bottom: 2%;
+  right: 0;
+}
+
+/* line 933, ../sass/_style.scss */
+.ft-filter {
+  color: #333333;
+  font-family: "DINNextLTProMediumCond", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* line 938, ../sass/_style.scss */
+.select-cont_footwear {
+  width: 110px;
+}
+
+/* line 952, ../sass/_style.scss */
+.fw-block__img_large {
+  max-width: 100%;
+  left: 5%;
+}
+
+/* line 973, ../sass/_style.scss */
+.fw-description__old-price {
+  color: red;
+  margin-left: 5px;
+}
+
+/* line 977, ../sass/_style.scss */
+.fw-left-block {
+  text-align: left;
+  padding: 40px;
+}
+
+/* line 981, ../sass/_style.scss */
+.left-block__img {
+  float: left;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* line 985, ../sass/_style.scss */
+.left-block__description {
+  position: absolute;
+  top: 34%;
+  right: 0;
+  left: 48%;
+  bottom: 0;
+  margin: auto;
+  margin-right: 40px;
+}
+
+/* line 991, ../sass/_style.scss */
+.lb-description__features {
+  margin-bottom: 1px;
+}
+
+/* line 995, ../sass/_style.scss */
+.lb-description__text {
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+
+/* line 1004, ../sass/_style.scss */
+.fw-block__brand {
+  background: url(../img/footwear__new-arrivals_theme.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+/* line 1009, ../sass/_style.scss */
+.brand-block__text {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* line 1012, ../sass/_style.scss */
+.brand-block__name {
+  color: #ffffff;
+  font-family: "DINNextLTProMediumCond", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.4px;
+}
+
+/* line 1015, ../sass/_style.scss */
+.brand-block__title {
+  color: #ffffff;
+  font-family: "DINNextLTProMediumCond", sans-serif;
+  font-size: 55px;
+  line-height: 50px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+/* line 1021, ../sass/_style.scss */
+.action-bar {
+  position: absolute;
+  left: 13%;
+  top: 12%;
+  width: 70%;
+}
+/* line 1025, ../sass/_style.scss */
+.action-bar_cb {
+  top: 8%;
+}
+/* line 1028, ../sass/_style.scss */
+.action-bar_lb {
+  left: 0;
+  top: -34%;
+}
+
+/* line 1032, ../sass/_style.scss */
+.action-bar__like, .action-bar__cart {
+  cursor: pointer;
+  font-size: 20px;
+  color: #a0a0a0;
+}
+/* line 1034, ../sass/_style.scss */
+.action-bar__like:hover, .action-bar__cart:hover {
+  color: #0089cf;
+}
+
+/* line 1038, ../sass/_style.scss */
+.action-bar__like {
+  float: left;
+}
+
+/* line 1039, ../sass/_style.scss */
+.action-bar__label {
+  color: #ffffff;
+  font-family: "DINNextLTProMediumCond", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  display: inline-block;
+  -moz-border-radius: 45%;
+  -webkit-border-radius: 45%;
+  border-radius: 45%;
+}
+/* line 1043, ../sass/_style.scss */
+.action-bar__label_blue {
+  background-color: #0089cf;
+}
+/* line 1046, ../sass/_style.scss */
+.action-bar__label_green {
+  background-color: #83d78c;
+}
+
+/* line 1050, ../sass/_style.scss */
+.action-bar__cart {
+  float: right;
 }
