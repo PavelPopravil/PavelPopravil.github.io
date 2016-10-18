@@ -85,5 +85,10 @@ $( document ).ready(function() {
 		e.preventDefault();
 	});
 	
+	// sign popup
+	$('.js-signCall').click(function(e) {
+		e.preventDefault();
+		$('.js-popup').bPopup();
+	});
 });
 

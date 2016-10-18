@@ -23,7 +23,7 @@ $input-color: #ccc;
 
 /* buttons */
 
-a {
+a, button {
     @include transition(all 0.5s ease);
     text-decoration: none;
     &:hover {
@@ -136,7 +136,7 @@ a {
 
 .navig__item {
 
-    margin-right: 36px;
+    margin-right: 20px;
     display: inline-block;
 
     @include respond-to(md) {margin-right: 10px;}
@@ -425,7 +425,7 @@ a {
     @extend .buttn__link_gray;
     position: absolute; bottom: 0; right: 0;
     padding: 20px 73px !important;
-     @include respond-to(sm) {right: 38px;}
+    @include respond-to(sm) {right: 38px;}
 }
 
                 // PRODUCT SECTION
@@ -518,7 +518,7 @@ a {
 }
 .buttn__link {
     @include font-type($gray-color, $main-font, 14px, 14px, 0.7px); text-transform: uppercase;
-    display: inline-block; margin-right: 6px;
+    display: inline-block; margin-right: 6px; border: none;
     &:last-child {margin-right: 0px;}
 }
 .buttn__link_white {
@@ -532,6 +532,8 @@ a {
     @extend .buttn__link;
     color: #fff; background: $gray-color;
     padding: 16px 30px 17px;
+
+    &:hover {color: $blue-color;}
 } 
 
 // DropSize
@@ -861,7 +863,7 @@ ul.dropMe {
     @include respond-to(xs) {font-size: 19px; top: 89px; right: 3px;}
 }
 .search-product {
-    padding: 0px 50px 50px;
+    padding: 0px 50px 50px; min-height: 663px;
     @include respond-to(xs) {padding: 0px 20px 50px;} 
 }
 
@@ -884,7 +886,7 @@ ul.dropMe {
 .pr-block__img {
     position: absolute; left: 0; top: 0; right: 0; bottom: 15%; margin: auto; max-height: 200px;
     max-width: 230px;
-    @include respond-to(lg) {max-width: 190px;}
+    @include respond-to(xs) {max-width: 190px;}
 }
 .pr-block__description {}
 .bl-description {
@@ -904,12 +906,8 @@ ul.dropMe {
 
                 // FOOTWEAR PAGE
 .footwear-section {
-    padding: 30px 50px 0px;
-    @include respond-to(xs) {padding: 20px 20px 0px;} 
-    &:last-child {
-        padding-bottom: 30px;
-        @include respond-to(xs) {padding-bottom: 20px;}
-    }
+    padding: 0px 50px 0px;
+    @include respond-to(xs) {padding: 00px 20px 0px;}
 }
 
 // moduls
@@ -928,7 +926,10 @@ ul.dropMe {
 
 // filter 
 .footwear-section__form {
-    position: absolute; bottom: 2%; right: 0;
+    position: absolute; bottom: 3%; right: 0;
+    @include respond-to(xs) {
+        position: static; float: right;
+    }
 }
 .ft-filter {
     @extend .p-info__input_sel;
@@ -943,6 +944,7 @@ ul.dropMe {
 .footwear-section__block {}
 .fw-block {
     @extend .pr-block;
+    margin-bottom: 30px;
 }
 
 .fw-block__img-cont {}
@@ -952,6 +954,9 @@ ul.dropMe {
 .fw-block__img_large {
     max-width: 100%;
     left: 5%;
+    @include respond-to(sm) {
+        left: 0; max-width: 85%;
+    }
 }
 
 .fw-block__description {}
@@ -975,15 +980,37 @@ ul.dropMe {
 }
 // left-block
 .fw-left-block {
-    @extend .pr-block;
-    text-align: left; padding: 40px;
+    @extend .pr-block; margin-bottom: 30px;
+    padding: 40px;
+    display: flex;
+    @include respond-to(xs) {
+        display: block; padding: 20px;
+        height: 400px;
+    }
+}
+.left-block__img-cont {
+    width: 50%;
+    margin: auto;
+    @include respond-to(xs) {
+        margin: 0; width: 100%;
+    } 
 }
 .left-block__img {
-   float: left; 
-   position: absolute; top: 0; right: 50%; left: 0; bottom: 0; margin: auto;
+    @include respond-to(xs) {
+        margin: 0 auto;
+        width: 50%;
+    } 
 }
 .left-block__description {
-    position: absolute; top: 34%; right: 0; left: 48%; bottom: 0; margin: auto; margin-right: 40px;
+    margin: auto; width: 50%;
+    text-align: left;
+    @include respond-to(xs) {
+        margin: 0; width: 100%;
+        text-align: center;
+    } 
+}
+.lb-description {
+   
 }
 .lb-description__brand {
     @extend .bl-description__brand;
@@ -1019,14 +1046,17 @@ ul.dropMe {
 // action-bar
 
 .action-bar {
-    position: absolute; left: 13%; top: 12%;
+    position: absolute; left: 15%; top: 12%;
     width: 70%; 
 
     &_cb {
         top: 8%;
     }
     &_lb {
-        left: 0; top: -34%;
+        left: 49%;
+        @include respond-to(xs) {
+            left: 15%; top: 87%;;
+        }    
     }
 }
 .action-bar__like, .action-bar__cart {
@@ -1048,3 +1078,61 @@ ul.dropMe {
      }
 }
 .action-bar__cart {float: right;}
+
+.popup-sign {
+    width: 320px; padding: 20px;
+    display: none; position: relative;
+    background-color: #f2f9fd;
+}
+.popup-sign__container {}
+.popup-sign__close {
+    float: right;
+    i {
+        color: $gray-color;
+    }
+}
+.popup-sign__title {
+    @extend .pr-name__title;
+    text-transform: none; margin-bottom: 20px;
+}
+.popup-sign__form {}
+.sign__label {
+    @extend .benefits__title; text-transform: none;
+    display: block; margin-bottom: 5px;
+    
+    &_show-pass {
+       @extend .cart__terms;
+       font-size: 14px; text-transform: none;
+    }
+}
+.sign__input {
+    width: 100%; padding: 5px 10px; margin-bottom: 10px;
+    background-color: inherit; border: 1px solid $gray-color;
+    @extend .benefits__title; text-transform: none;
+
+}
+.sign__check {
+    @extend .cart__check;
+}
+.sign__button-cont {
+    margin-top: 30px;
+}
+.sign__button {
+    @extend .buttn__link;
+    text-transform: none;
+    &:first-letter {
+        text-transform: uppercase;
+    }
+    &_gray {
+        @extend .buttn__link_gray;
+    }
+    &_inherit {
+        background-color: inherit;
+        border: none;
+        &:hover {
+            color: $blue-color;
+        }
+    }
+}
+// checbox
+
